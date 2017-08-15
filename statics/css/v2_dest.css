@@ -1,6 +1,4 @@
-﻿.dt-body{ background: #fff; }
-.dt-body .six-content{ background: #fff; padding-bottom: 20px; }
-.dt-content-wrap{ background: #fff; }
+﻿.dt-content-wrap{ background: #fff; margin-bottom: 10px; }
 .dt-content-wrap .dt-content-hd{ padding:0 15px; text-align: center; font-size: 14px; color: #666; font-weight: bold;}
 .dt-content-wrap .dt-content-hd span{ display: inline-block; padding:15px; }
 .dt-content-wrap .dt-content-hd .dt-bd-top{ display: block; border-top:1px solid #ededed; }
