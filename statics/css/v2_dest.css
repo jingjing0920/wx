@@ -4,15 +4,15 @@
 .dt-content-wrap .dt-content-hd .dt-bd-top{ display: block; border-top:1px solid #ededed; }
 .dt-content-wrap .dt-content-more{padding:0 15px 15px 15px; text-align: center;}
 .dt-content-wrap .dt-content-more .dt-more-link{ color: #57D07F; font-size: 14px; }
-.dt-dest-list{ display: block; overflow: hidden; padding-left: 10px; }
+.dt-dest-list{ display: block; overflow: hidden; padding-left: 15px; }
 .dt-dest-list .dt-dest-item{ float: left; display: block; width:33.333%;  }
-.dt-dest-list .dt-dest-item .dt-dest-box{ padding-right: 10px; padding-bottom: 10px; position: relative; overflow: hidden; text-align: center; }
+.dt-dest-list .dt-dest-item .dt-dest-box{ padding-right: 15px; padding-bottom: 10px; position: relative; overflow: hidden; text-align: center; }
 .dt-dest-list .dt-dest-item .dt-dest-img{ position: relative; overflow: hidden; -webkit-border-radius: 4px; border-radius: 4px;  }
 .dt-dest-list .dt-dest-item .dt-dest-img img{ width: 100%; }
 .dt-dest-list .dt-dest-item .dt-dest-name{ padding:10px 0; text-align: center; font-size: 14px; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 300; }
-.dt-bwan-list{ display: block; overflow: hidden; padding-left: 10px; }
+.dt-bwan-list{ display: block; overflow: hidden; padding-left: 15px; }
 .dt-bwan-list .dt-bwan-item{ float: left; display: block; width:50%;  }
-.dt-bwan-list .dt-bwan-item .dt-bwan-box{ padding-right: 10px; padding-bottom: 10px; position: relative; overflow: hidden; text-align: center; }
+.dt-bwan-list .dt-bwan-item .dt-bwan-box{ padding-right: 15px; padding-bottom: 10px; position: relative; overflow: hidden; text-align: center; }
 .dt-bwan-list .dt-bwan-item .dt-bwan-img{ position: relative; overflow: hidden; -webkit-border-radius: 4px; border-radius: 4px;  }
 .dt-bwan-list .dt-bwan-item .dt-bwan-img img{ width: 100%; }
 .dt-bwan-list .dt-bwan-item .dt-bwan-img .dt-bwan-region{ position: absolute; left:0; top:0; padding:0 5px; height: 16px; line-height: 16px; background: rgba(0,0,0,0.35); font-size: 10px;font-weight: 300; color: #fff; text-align: center; }
@@ -24,7 +24,7 @@
 .dt-tjtrip-ul{padding:0 15px;}
 .dt-tjtrip-ul .tjtrip-li{ display: block; border-bottom: 1px solid #ededed; margin-bottom: 15px; }
 .dt-tjtrip-ul .tjtrip-li a{color:inherit;}
-.dt-tjtrip-ul .tjtrip-li .tjtrip-img{ width: 100%; overflow: hidden; position: relative;  }
+.dt-tjtrip-ul .tjtrip-li .tjtrip-img{ width: 100%; overflow: hidden; position: relative; -webkit-border-radius: 4px; border-radius: 4px;  }
 .dt-tjtrip-ul .tjtrip-li .tjtrip-img img{ width: 100%; }
 .dt-tjtrip-ul .tjtrip-li .tjtrip-btm{padding:10px 0; padding-right: 50px; position: relative;}
 .dt-tjtrip-ul .tjtrip-li .tjtrip-title{color: #333; font-size: 16px; line-height: 22px; text-overflow: ellipsis; overflow: hidden;white-space: nowrap;}
