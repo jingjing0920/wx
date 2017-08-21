@@ -1,5 +1,5 @@
 ﻿/* 目的地页面改版 2017-08-15*/
-.dt-body .six-content{ /* padding-bottom: 44px; */ }
+.dt-body .six-content{/*  padding-bottom: 44px; */ }
 .dt-content-wrap{ background: #fff; margin-bottom: 10px; }
 .dt-content-wrap .dt-content-hd{ padding:0 15px; text-align: center; font-size: 14px; color: #666; font-weight: bold;}
 .dt-content-wrap .dt-content-hd span{ display: inline-block; padding:15px; }
@@ -55,11 +55,11 @@
 .dt-fullscreen{position: absolute; width: 100%; height: 100%; left:0; right:0; top: 0; bottom: 0;}
 .dt-content .dt-col-left{ float: left; width: 25%; height: 100%; position: relative;background: #f2f2f2;  }
 .dt-content .dt-col-right{ float: left; width: 75%; height: 100%; position: relative; }
-.dt-content .dt-category-box{ display: block; }
-.dt-content .dt-category-box .dt-category-item{font-size: 15px; font-weight: 400;}
-.dt-content .dt-category-box .dt-category-tit{ display: block; line-height: 50px; width: 100%; overflow: hidden; font-size: 15px; text-align: center; white-space: nowrap; text-overflow: ellipsis; }
-.dt-content .dt-category-box .dt-category-active .dt-category-tit{ background: #fff; color: #57D07F; }
-.dt-content .dt-category-content{display: none; position: relative;}
+.dt-category-box{ display: block; }
+.dt-category-box .dt-category-item{font-size: 15px; font-weight: 400;}
+.dt-category-box .dt-category-tit{ display: block; line-height: 50px; width: 100%; overflow: hidden; font-size: 15px; text-align: center; white-space: nowrap; text-overflow: ellipsis; }
+.dt-category-box .dt-category-active .dt-category-tit{ background: #fff; color: #57D07F; }
+.dt-category-content{display: none; position: relative;}
 .dt-cell-2 .dt-dest-item{ width: 50%; }
 .dt-content .dt-category-content .dt-dest-list{ padding-top: 15px;}
 .dt-content .dt-content-active{ display: block; }
@@ -67,6 +67,33 @@
 	.dt-content .dt-category-box .dt-category-tit{ font-size: 13px; }
 	.dt-dest-list .dt-dest-item .dt-dest-name{ font-size: 12px; }
 }
+.bwan-content .trip-infoCont{background: #fff;}
+.bwan-content .trip-commont{padding-top: 10px;}
+.bwan-content .trip-infoItem{ margin-bottom: 0; }
+.bwan-detail-container{padding-bottom: 0;}
+.bwan-all{ padding-top: 40px; }
+.top-nav-inner{ width: 100%; }
+.top-nav-list{ display: block; width: 100%;height: 40px;background: #fff; border-bottom: 1px solid #ededed; }
+.top-nav-list .top-nav-item{ float: left; display: block; height: 40px; width: 50%; position: relative; }
+.top-nav-list .top-nav-item .nav-cell{ display: block; line-height: 40px; height: 40px; width: 100%; text-align: center; font-size: 14px; }
+.top-nav-list .top-nav-item .up-arr{ display: inline-block; width: 10px; height: 10px; position: relative; top: -2px; border: 5px solid transparent; border-bottom: 5px solid #999; margin-left: 5px; }
+.top-nav-list .top-nav-item .dw-arr{ display: inline-block; width: 10px; height: 10px; position: relative; top: 2px; border: 5px solid transparent; border-top: 5px solid #999; margin-left: 5px; }
+.top-nav-list .top-nav-item.top-nav-active .nav-cell{ color: #57D07F; }
+.top-nav-list .top-nav-item.top-nav-active .up-arr{ border-bottom-color: #57D07F; }
+.top-drop-wrap{ width: 100%; height: 300px; background: #fff; overflow: hidden; position: relative; }
+.mask-wrap{ display: none; height: 100%; width: 100%;  background: rgba(0,0,0,0.5); position: fixed; top: 0;  left: 0; z-index: 2;}
+.top-drop-inner{ position: absolute; width: 100%; height: 100%; left:0; right:0; top: 0; bottom: 0; }
+.top-drop-inner .top-drop-list{ display: block; width: 100%; }
+.top-drop-inner .top-drop-list .drop-list-item{ display: block; padding-left: 15px; position: relative; }
+.top-drop-inner .top-drop-list .drop-list-tit{ display: block; height: 44px; line-height: 43px; border-bottom: 1px solid #ededed; font-size: 14px; color: #666; }
+.top-drop-inner .top-drop-list .drop-item-active .drop-list-tit{ color:#57D07F;  }
+.top-drop-inner .top-drop-list .drop-item-active:after{content: ''; display: inline-block; width: 24px; height: 44px; position: absolute; top:0; right: 15px; background: url(../img2/common-v2/i_ok.png) no-repeat center center; background-size: 20px 20px;}
+.top-area-wrap{ width: 100%; height: 100%; }
+.area-left{ float: left; width: 25%;height: 100%; position: relative; background: #f2f2f2; }
+.area-right{ float: left; width: 75%;height: 100%; position: relative; }
+.area-left .dt-category-box .dt-category-tit{ line-height: 44px; font-size: 14px; }
+.top-topic-wrap{width: 100%; height: 100%;}
+
 
 
 

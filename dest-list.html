@@ -8,7 +8,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="statics/css/v2_app_base.css" />
-    <link rel="stylesheet" type="text/css" href="statics/css/v2_layer.css" />
     <link rel="stylesheet" type="text/css" href="statics/css/v2_dest.css" />
 </head>
 <body class="dt-body">
@@ -18,7 +17,7 @@
     </header>
     <section class="six-content dt-content dt-fullscreen">
         <div class="dt-col-left dtscroll">
-            <ul id="segmentedControls" class="dt-category-box">
+            <ul class="dt-category-box">
                 <li class="dt-category-item dt-category-active"><a href="" class="dt-category-tit">日韩台</a></li>
                 <li class="dt-category-item"><a href="" class="dt-category-tit">北美洲</a></li>
                 <li class="dt-category-item"><a href="" class="dt-category-tit">欧洲欧洲</a></li>
@@ -38,7 +37,7 @@
                 <li class="dt-category-item"><a href="" class="dt-category-tit">南亚</a></li>
             </ul>
         </div>
-        <div id="segmentedControlContents" class="dt-col-right dtscroll">
+        <div class="dt-col-right dtscroll">
             <!-- 分类内容 -->
             <div class="dt-category-content dt-content-active">
                 <ul class="dt-dest-list dt-cell-2">
@@ -168,8 +167,6 @@
         mui.init({
             swipeBack: true, //启用右滑关闭功能
         });
-        var controls = document.getElementById("segmentedControls");
-        var contents = document.getElementById("segmentedControlContents");
         mui('.dtscroll').scroll({
             scrollY: true, //是否竖向滚动
             scrollX: false, //是否横向滚动
