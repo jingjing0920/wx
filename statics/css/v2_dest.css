@@ -1,5 +1,7 @@
 ﻿/* 目的地页面改版 2017-08-15*/
-.dt-body .six-content{/*  padding-bottom: 44px; */ }
+.dt-body .six-content{padding-bottom: 0;}
+.dt-body .six-header~.six-content { padding-top: 44px; }
+.dt-body .six-ft-bar~.six-content { padding-bottom: 44px; }
 .dt-content-wrap{ background: #fff; margin-bottom: 10px; }
 .dt-content-wrap .dt-content-hd{ padding:0 15px; text-align: center; font-size: 14px; color: #666; font-weight: bold;}
 .dt-content-wrap .dt-content-hd span{ display: inline-block; padding:15px; }
@@ -46,6 +48,8 @@
 .dt-top .dt-top-info .dt-top-pic-thumb .dt-top-text .text-eng{ display: block; font-size: 12px; line-height: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 300;}
 .dt-top-counts{ color: #fff; font-size: 14px; padding:10px; }
 .dt-top-counts .dt-line{ font-size: 12px; font-weight: 300; margin:0 10px; }
+.dt-top-counts .dt-top-trip i{ display: inline-block; width: 14px; height: 14px; position: relative; top:2px; margin-right: 3px; background: url(../img2/common-v2/i_trip-line.png) no-repeat; background-size: cover; }
+.dt-top-counts .dt-top-fun i{ display: inline-block; width: 14px; height: 14px; position: relative; top:2px; margin-right: 3px; background: url(../img2/common-v2/i_fun.png) no-repeat; background-size: cover; }
 .six-ft-btn{border:0 none;}
 .dt-btn-submit{ display: block; width: 100%; height: 44px; line-height: 44px; background: #15c35a; color: #FFF;  text-align: center; font-size: 14px;}
 .bwan-all{ background: #fff; }
