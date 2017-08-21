@@ -1,0 +1,180 @@
+﻿/* 行程蓝本 2016-12-12 */
+.trip-detail-body{ background: #fff; }
+.trip-detail-body .six-content{background: #fff;}
+.trip-detail{ font-family: "PingFangSC-Light" }
+.six-ft-btn{border:0 none;}
+.od-btn-submit{ display: block; width: 100%; height: 44px; line-height: 44px; background: #57D07F; color: #FFF;  text-align: center; font-size: 14px;}
+.topic-image{ width: 100%; position: relative; overflow: hidden; }
+.banner-wrap .banner-slider{}
+.banner-wrap .banner-slider img{ width: 100%; }
+.topic-info-top{width: 100%; height: 100%; position: absolute;top:0; left: 0; z-index: 5; background: rgba(0,0,0,.45); color: #fff;}
+.topic-title{ padding:50px 15px 0 15px; text-align: center; color: #fff; font-size: 18px;font-family: "PingFangSC-Medium" }
+.topic-info{ width: 100%; position: absolute; left: 0; bottom: 0; text-align: center; padding-bottom: 12px; }
+.topic-info .topic-inf1{ font-size: 14px; margin-bottom: 5px;font-family: "PingFangSC-Medium" }
+.topic-info .topic-inf2{ font-size: 12px; }
+.topic-info .topic-inf1 span,.topic-info .topic-inf2 span{ display: inline-block; margin:0 5px; }
+.trip-commont{ background: #fff; margin-bottom: 10px; }
+.trip-commont2{ background: #F6F9FB; margin-bottom: 10px;  }
+.trip-commont-hd{text-align: center; font-size: 14px; color: #222; padding:15px; position: relative; }
+.trip-commont-hd span{ display: inline-block; padding:0 10px;position: relative;}
+.trip-commont-hd span:before{ display: inline-block; content: ''; width:10px; height: 1px; font-size: 0; background-color: #d2d2d2; position: absolute; left: -10px; top: 10px;}
+.trip-commont-hd span:after{ display: inline-block; content: ''; width:10px; height: 1px; font-size: 0; background-color: #d2d2d2; position: absolute; right: -10px; top: 10px;}
+.trip-commont2 .trip-commont-hd{ font-size: 12px; color: #666; }
+.trip-commont2 .trip-commont-hd span{padding-top: 2px;}
+.poi-special{ padding:5px 15px; font-size: 12px; color: #333; }
+.poi-special p{ line-height: 18px; margin-bottom: 8px; padding-left: 24px; background: url(../img2/trip/zan.png) left 1px no-repeat; background-size: 15px;}
+.specialSpotList{}
+.specialSpotList ul{padding-left: 15px;}
+.specialSpotList li {width: 50%;float: left; margin-bottom: 10px;}
+.specialSpotList li a {display: block;margin-right: 15px; background-color: #FFF;}
+.specialSpotList li .t2{ padding:10px; color: #666666; }
+.specialSpotList li .t2 p{font-size: 12px; line-height: 14px; height: 28px; overflow: hidden; text-overflow:ellipsis;}
+.specialSpotList .sp-img{ position: relative; width: 100%; border-radius: 2px; overflow: hidden;}
+.specialSpotList .sp-img img{ border-radius: 2px; }
+.specialSpotList .cy{ display: inline-block; position: absolute; left: 0; top: 0; background: rgba(0,0,0,.35); color: #FFF; font-size: 10px; padding:0 5px;}
+.specialSpotList li .t1{ padding-top: 5px; }
+.specialSpotList li .t1 p{color: #333; font-size: 14px; height: 18px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
+.spec-more{ text-align: center; padding:5px 10px 15px 10px; color:#57D07F; }
+.spec-more .btn-specMore{ display: inline-block; color:#57D07F; height: 26px; line-height: 24px; text-align: center;  font-size: 12px;  position: relative; }
+.spec-more .btn-specMore .ic-poi{  display: inline-block; width: 11px; height: 7px; margin-left: 5px; background: url(../img2/trip/dw-arrow.png) no-repeat; background-size: 11px 7px;}
+.spec-more .btn-specMore .ic-flod{ -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.trip-review{ background: transparent; }
+.trip-opr{ position: absolute; right:15px; top: 15px; }
+.trip-opr .checkbox { position: relative; display: inline-block;}
+.trip-opr .checkbox input { position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 5; opacity: 0; cursor: pointer;}
+.trip-opr .checkbox label {width: 48px;height: 20px; background: #ccc; position: relative; display: inline-block;border-radius: 10px; -webkit-transition: 0.4s; transition: 0.4s;}
+.trip-opr .checkbox label:after { content: ''; position: absolute;width: 18px;height: 18px; border-radius: 100%;left: 1px;top: 1px; z-index: 2; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);  -webkit-transition: 0.4s; transition: 0.4s;}
+.trip-opr .checkbox label:before{content: '展开'; display: inline-block; line-height: 18px; position: absolute; right: 5px; top:2px; color: #fff; font-size: 10px;}
+.trip-opr .checkbox input:checked + label { background: #57D07F;}
+.trip-opr .checkbox input:checked + label:after { background: #fff; left: 29px;}
+.trip-opr .checkbox input:checked + label:before{content: '合起'; position: absolute; right: 23px; top:2px; color: #fff; font-size: 10px;}
+
+.trip-content{padding:0 10px;}
+.day-content-item{}
+.day-hd{ width: 100%; position: relative; padding:15px 20px 15px 10px; }
+.day-hd:before{ display: inline-block; content: ''; width: 2px; height: 34px; background: #57D07F; position: absolute; left:0; top:18px;  }
+.day-hd:after{ display: inline-block; content: ''; width: 14px; height: 8px; position: absolute; right: 5px; top: 45px; background: url(../img2/trip/i-arr-dw.png) no-repeat; background-size: 14px 8px; }
+.day-hd-unfold{border-bottom: 1px solid #e2e2e2;}
+.day-hd-unfold:after{-webkit-transition:all 0.1s; -webkit-transform:rotate(180deg);  }
+.day-content-item:last-child .day-hd-unfold{border-bottom: 0 none;}
+.day-hd .day-inf{ line-height: 16px; padding-bottom: 3px; }
+.day-hd .day-inf .day-number{ font-weight: 700; color: #333; font-size: 14px; }
+.day-hd .day-inf .day-date{ margin-left: 10px; }
+.day-hd .day-city-list{ font-size: 16px; color: #333; line-height: 20px; }
+.day-bd{padding:5px 0 5px 5px;}
+.day-bd .day-item{ background: #fff; margin-bottom: 8px; padding:15px; position: relative; }
+.day-bd .day-item-arrow:after{ display: inline-block; content: ''; width: 12px; height: 12px; position: absolute; right: 15px; top: 50%; margin-top: -6px; background: url(../img2/common-v2/i_arr_right.png) no-repeat; background-size: 12px 12px; }
+.day-bd .day-item-arrow .day-item-cont{padding-right: 30px;}
+.day-bd .itrip{ display: inline-block; width: 20px; height: 20px; position: absolute; left: 15px; top: 50%; margin-top: -10px; background: url(../img2/trip/itrip.png) no-repeat; background-size: 100px 20px; }
+.day-bd .itrip-flight{background-position: -20px 0;}
+.day-bd .itrip-remark{background-position: -80px 0;}
+.day-bd .itrip-spot{background-position: -40px 0;}
+.day-bd .itrip-activity{background-position: 0 0;}
+.day-bd .itrip-hotel{background-position: -60px 0;}
+.day-bd .day-text{ font-size: 12px; color: #999; }
+.day-bd .day-item-cont{ padding-left: 30px; overflow: hidden; }
+.day-bd .flight-inf{ font-size: 14px; color: #333; font-family: "PingFangSC-Regular";}
+.day-bd .day-remark .itrip{ top: 15px; margin-top: 0; }
+.day-bd .day-remark .remark-inf{ color: #666; }
+.day-bd .day-item-cont .day-img{width: 64px; height: 43px; float: left; margin-right: 10px;}
+.day-bd .day-item-cont .day-img img{ width: 100%; }
+.day-bd .day-item-cont .day-item-title{ padding-left: 10px;padding-top: 12px; font-family: "PingFangSC-Regular"; font-size: 14px; color:#333;}
+.day-bd .day-item-cont .day-item-title p{height: 18px; line-height: 18px; font-size: 14px; color: #333; white-space: nowrap;overflow: hidden;  text-overflow: ellipsis; }
+.traffic-box{padding-bottom: 5px;}
+.traffic-box .traffic-list{padding:0 15px;}
+.traffic-box .traffic-list .trafficItem{ display: block; position: relative; color: #fff; margin-bottom: 10px; -webkit-border-radius: 4px; border-radius: 4px; background-image: linear-gradient(-90deg, #55C089 0%, #A1D766 100%);}
+.traffic-box .traffic-list .trafficHd{ height: 42px; line-height: 42px; padding:0 15px; font-size: 14px; text-align: right; border-bottom: 1px solid #FFF; position: relative; }
+.traffic-box .traffic-list .trafficHd:before{display: inline-block; content: ''; width: 12px; height: 12px; border-radius: 6px; background: #fff; position: absolute; left: -6px; top: 36px; }
+.traffic-box .traffic-list .trafficHd:after{display: inline-block; content: ''; width: 12px; height: 12px; border-radius: 6px; background: #fff; position: absolute; right: -6px; top: 36px; }
+.traffic-box .traffic-list .trafficHd .traffic-day{ float: left; }
+.traffic-box .traffic-list .trafficHd .traffic-city{ display: block; height: 42px; padding-left: 10px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.traffic-box .traffic-list .trafficInf{ height: 30px; font-size: 10px; padding:0 12px; line-height:30px;  position: relative;}
+.traffic-box .traffic-list .trafficInf:after{ content: ''; position: absolute; left: 0; background: #fff;  width: 100%;  height: 1px; -webkit-transform: scaleY(0.5); transform: scaleY(0.5);  -webkit-transform-origin: 0 0;  transform-origin: 0 0;}
+.traffic-box .traffic-list .trafficInf .trafficNo{ float: left; }
+.traffic-box .traffic-list .trafficInf .trafficLastTime{ float: right; }
+.trafficBd{padding:10px 15px;}
+.trafficBd .airpot-info{ display: table; width: 100%;font-size:12px }
+.trafficBd .from-info {display: table-cell; width: 35%; }
+.trafficBd .time-info {display: table-cell; width: 30%; text-align: center; padding: 0 8px; vertical-align: middle;}
+.trafficBd .to-info{display:table-cell; width:35%; text-align:right; }
+.trafficBd .date-font{ line-height: 14px;font-size: 10px; }
+.trafficBd .time-font {font-size: 20px;  line-height: 30px; font-weight: 700;}
+.trafficBd .from-place, .trafficBd .to-place {  line-height: 12px;margin: 6px 0; }
+.trafficBd .plane-info {position: relative; height: 1px;}
+.trafficBd .arrow-right{position:absolute;width:100%;border-bottom:1px dashed #fff}
+.trafficBd .plane-info-icon{ display: inline-block; width: 17px; height: 6px; background: url(../img2/trip/iplane.png) no-repeat; background-size: 17px 6px; position: absolute; left: 50%; top: -10px; margin-left: -10px; }
+.trafficInf .ic-poiTime{ display: inline-block; width: 12px; height: 12px; background-position: -96px -8px; margin-right: 3px; position: relative; top: 2px;}
+.hotel-list{padding:0 15px 5px 15px;}
+.hotel-list .hotel-item{ display: block; margin-bottom: 10px; padding-bottom: 15px; position: relative; background: #fafafa;}
+.hotel-list .hotelHd{ height: 42px; line-height: 42px; padding:0 15px; font-size: 14px; text-align: right; position: relative; }
+.hotel-list .hotelHd .hotel-day{ float: left; }
+.hotel-list .hotelHd .hotel-city{ display: inline-block; height: 42px; padding-left: 16px; background: url(../img2/trip/ipin.png) left center no-repeat; background-size: 11px 11px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.hotel-list .hotelBd{ padding:0 15px; overflow: hidden; padding-left:115px; }
+.hotel-list .hotelBd dl{ padding-left: 15px; }
+.hotel-list .hotel-img{ float: left; width: 100px; height: 67px; overflow: hidden; margin-left: -100px; position: relative;}
+.hotel-list .hotel-img img{ width: 100%; height: auto;}
+.hotel-list .day-section{ display: block; width: 24px; height: 53px; line-height: 14px; padding-top: 4px; text-align: center; color: #FFF; font-size: 10px; background-color:#15c35a; position: absolute; top: 20px; left: 0; }
+.hotel-list .day-section .day-number{display: block; text-align: center; font-size: 10px;}
+.hotel-list .day-section .day-lastDot{ display: inline-block; width: 10px; height: 14px; background-position:-105px -129px;  }
+.hotel-list .hotelName{ font-size: 14px; color: #333; height: 24px; line-height: 24px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.hotel-list .hotelNameEg{ font-size: 10px; color: #999; height: 16px; line-height: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.hotel-list .hotelInfo{ overflow: hidden; color: #666; font-size: 12px; margin-top: 6px;}
+.hotel-list .hotelInfo span{ float: left;}
+.hotel-list .hotelStar{ margin-right: 5px;}
+.hotel-list .hotelStar .ic-star-sm{ float: left; display: inline-block; width: 10px; height: 10px; background:url(../img2/trip/ibigStar.png) no-repeat; background-size: 10px 10px; margin-right: 2px; margin-top: 3px;}
+.cost-list{padding:0 15px 15px;}
+.cost-list .cost-item{ display: block; background: #fafafa; margin-bottom: 10px; }
+.cost-list .cost-item .cost-hd{ text-align: center; font-size: 12px; color: #333; padding:10px; }
+.cost-list .cost-item .cost-bd{ padding:0 15px 15px; font-size: 12px; color: #666; line-height: 18px; }
+
+.trip-topSlider {width: 100%;overflow: hidden;position:relative;}
+.trip-topSlider .swiper-slide {position:relative;text-align:center;}
+.trip-topSlider img {max-width: 100%;}
+.trip-topSlider .pagination {position: absolute;z-index: 20;bottom: 10px;width: 100%;text-align: center;right:0;}
+.trip-topSlider .swiper-pagination-bullet {display: inline-block;width: 6px;height: 6px;border-radius:3px;background: rgba(255,255,255,.65);margin: 0 2px;opacity: 0.8;cursor: pointer;}
+.trip-topSlider .swiper-pagination-bullet-active {background: #15c35a;}
+.trip-spotTitle { padding: 15px; text-align: center; }
+.trip-spotTitle .trip-colName{ font-size: 18px; color: #333; line-height: 20px; margin-bottom: 4px; font-family: "PingFangSC-Regular";  }
+.trip-spotTitle .trip-colEng{ font-size: 14px; color: #999; }
+.trip-infoCont{padding-top: 10px;}
+.trip-infoCont2{ padding-top: 15px; }
+.trip-infoItem{padding:0 15px; margin-bottom: 5px;}
+.trip-infoItem dt{ display: block; position: relative; color: #999; font-size: 16px; padding-left: 10px; line-height: 20px; }
+.trip-infoItem dt:before{display: inline-block; content: ''; width: 3px; height: 10px; background: #57D07F; position: absolute; left:0; top:50%; margin-top: -5px;}
+.trip-infoItem dd{padding:10px 0 10px 10px; color: #333; font-size: 14px; line-height: 22px;}
+.trip-starDt{ margin-top: 10px; }
+.trip-starDt .poi-hotelStar{ color: #666; }
+.trip-hotelStar .ic-star-bg{display: inline-block; width: 14px; height: 14px; background:url(../img2/trip/ibigStar.png) no-repeat;background-size: 14px 14px; position: relative; top: 1px;}
+.trip-infoItem .pgn{color: #57D07F;}
+.play-title{ padding:0 15px; margin-top: 50px; text-align: center; color: #fff; font-size: 20px; line-height: 24px; font-family: "PingFangSC-Medium" }
+.play-city{ text-align: center; padding:10px 15px; font-size: 12px; margin-top: 10px; }
+.play-city span{ display: inline-block; background: url(../img2/trip/ipin-wht.png) left center no-repeat; background-size: 10px 10px; padding-left: 15px; }
+.play-label{ width: 100%; position: absolute; bottom:10%; left: 0; text-align: center; }
+.play-label .pl-label-item{display: inline-block; height: 18px; line-height: 18px; padding:0 5px; border-radius: 3px; border:1px solid #fff; margin:0 5px; font-size: 10px;}
+.pl-label .pl-label-item{display: inline-block; height: 18px; line-height: 18px; color: #666; padding:0 5px; border-radius: 3px; border:1px solid #666; margin-right: 10px; font-size: 10px;}
+.desc-more{ padding: 5px; text-align: center;  display: block;}
+.desc-more span{ display: block; line-height: 14px; font-size: 10px;color: #999; }
+.desc-more .up-arr{ display: inline-block; width: 10px; height: 7px; background: url(../img2/trip/dw-arr-gry.png) no-repeat; background-size: 10px 7px; }
+.desc-more .dw-arr{ -webkit-transform:rotate(180deg); }
+.traffic-wrap{padding-top: 15px;}
+.flight-remark-box{padding:0 15px;}
+.flight-remark-box .flight-remark{padding:10px; padding-left: 35px; font-size: 12px; color: #666; background:#F6F9FB ; position: relative; }
+.flight-remark-box .flight-remark:before{display: inline-block; content:''; width: 20px; height: 20px; position: absolute; left: 10px; top: 10px; background: url(../img2/trip/itrip.png) -80px 0 no-repeat; background-size: 100px 20px;}
+.six-ft-cell2{}
+.six-ft-cell2 {display: table; width: 100%; height: 44px;}
+.six-ft-cell2 a{ display: table-cell; height: 44px; width: 50%; text-align: center; vertical-align: middle;  }
+.six-ft-cell2 .btn-consult{   text-align: center; color: #333; font-size: 14px; }
+.six-ft-cell2 .btn-consult .iconsult{ display: inline-block; width: 20px; height: 20px;  position: relative; top: 3px; margin-right: 5px; background: url(../img2/trip/i_hm_dialogue.png) no-repeat; background-size: 20px 20px;  }
+.six-ft-cell2 .btn-payment{  text-align: center; color: #FFF; background-color: #16c35a; font-size: 14px; }
+
+.addDay{display: inline; font-size: 10px; color: #fff; font-weight: normal;}
+
+
+
+
+
+
+
+
+
+
