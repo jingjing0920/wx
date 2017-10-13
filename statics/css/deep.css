@@ -20,9 +20,9 @@
 .deep-list-ul .deep-list-item2 .deep-item-box .deep-image{ position: relative; overflow: hidden; -webkit-border-radius: 4px; border-radius: 4px;}
 .deep-list-ul .deep-list-item2 .deep-item-box .deep-image img{width: 100%;}
 .deep-list-ul .deep-list-item2 .deep-item-box .deep-text{ padding-top: 15px;}
-.deep-list-ul .deep-list-item2 .deep-item-box .deep-text .title{ height: 18px; font-size: 16px; font-weight: 700; color: #333333; margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.deep-list-ul .deep-list-item2 .deep-item-box .deep-text .title{ font-size: 18px; font-weight: 700; color: #333333; margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .deep-list-ul .deep-list-item2 .deep-item-box .deep-text .sub-title{ height: 36px; font-size: 14px; line-height: 18px; color: #666666; overflow: hidden; text-overflow: ellipsis;}
-.deep-list-ul .deep-list-item2 .deep-item-box .deep-text .deep-city{ font-size: 10px; color: #999;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 10px;}
+.deep-list-ul .deep-list-item2 .deep-item-box .deep-text .deep-city{ font-size: 10px; color: #a8a8a8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 8px;}
 
 
 
