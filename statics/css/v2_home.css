@@ -1,0 +1,116 @@
+﻿.home-top{ width: 100%;height: 350px; overflow: hidden; position: relative; margin-bottom: 10px;}
+.hm-slider{width: 100%;}
+.hm-slider-item{ display: block; width: 100%; height: 350px; position: relative; background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.hm-slider-txt{ display: block; width: 100%; position: absolute; top: 12%; }
+.hm-actions{ width: 100%; position: absolute; bottom: 0; left: 0; right: 0; z-index: 10;background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.2)); }
+.hm-actions-list{ width: 100%; display: table; }
+.hm-actions-list .hm-actions-item{display: table-cell; width: 1%; position: relative; padding-bottom: 20px; text-align: center; vertical-align: middle; white-space: nowrap; text-overflow: ellipsis; color: #fff;}
+.hm-actions-list .hm-actions-item .actions-icon{ display: inline-block; text-align: center; width: 44px; height: 44px; position: relative; }
+.hm-actions-list .hm-actions-item .actions-txt{ display: block; font-size: 13px; overflow: hidden; text-overflow: ellipsis; padding-top: 10px; }
+.hm-actions-list .hm-actions-item .actions-icon.icon-map{ background:rgba(0,0,0,.2) url(../img2/common-v2/i_hm_trip.png) center center no-repeat;  background-size: 24px 24px; border:2px solid #fff; border-radius: 50%; }
+.hm-actions-list .hm-actions-item .actions-icon.icon-consult{ background:rgba(0,0,0,.2) url(../img2/common-v2/i_hm_chat.png) center center no-repeat;  background-size: 24px 24px; border:2px solid #fff; border-radius: 50%;}
+.hm-actions-list .hm-actions-item .actions-submit i{ display: inline-block; width:74px; height: 74px; position: absolute; bottom: 7px; left: 50%; z-index: 10;margin-left: -37px; background: rgba(255,255,255,.9) url(../img2/common-v2/i_btn_submit.png) center center no-repeat; background-size: 28px;border-radius: 50%;  }
+.hm-actions-list .hm-actions-item .actions-submit:after{content: ''; display: block; width: 88px; height: 88px;position: absolute; bottom: 0; left: 50%;z-index: 1; margin-left: -44px; background: rgba(255,255,255,.3); border-radius: 50%;}
+.hm-reddot .actions-icon:after{content: ''; position: absolute; display: block; width: 8px; height: 8px; background-color: #f74c31; border-radius: 5px; right: 5px; top: 7px; -webkit-background-clip: padding-box;background-clip: padding-box;}
+.hm-column{ background: #fff; margin-bottom: 10px; }
+.hm-column .hm-col-title{ padding:10px 15px; text-align: center; font-size: 15px; line-height: 24px; color: #333; font-weight: 600; }
+.activity-list{ padding:0 15px; overflow: hidden; }
+.activity-list li{ display: block; width: 100%; margin-bottom: 15px; }
+.special-list{ padding:0 15px; overflow: hidden; }
+.special-list li{ display: block; width: 100%; margin-bottom: 15px; }
+@media only screen and (min-height:480px) {
+	.home-top,.hm-slider-item{height:320px }
+}
+@media only screen and (min-height:567px) {
+	.home-top,.hm-slider-item{height:350px }
+}
+@media only screen and (min-height:627px) {
+	.home-top,.hm-slider-item{height:400px }
+}
+@media only screen and (min-height:730px) {
+	.home-top,.hm-slider-item{height:450px }
+}
+@media only screen and (min-height:850px) {
+	.home-top,.hm-slider-item{height:530px }
+}
+@media only screen and (min-height:950px) {
+	.home-top,.hm-slider-item{height:600px }
+}
+@media only screen and (min-height:1024px) {
+	.home-top,.hm-slider-item{height:630px }
+}
+
+/* 连接旅行顾问 20160804 */
+.hm-actions-list .hm-actions-item .actions-submit i{ background: rgba(255,255,255,.9) url(../img2/common-v2/i_btn_dialogue.png) center center no-repeat; background-size: 28px;  }
+.hm-slider-txt{top:10%;}
+.hm-actions-list .hm-actions-item .actions-txt{padding-top: 6px;}
+.hm-actions-list .hm-actions-item{padding-bottom: 15px;}
+@media only screen and (min-width:400px) {
+	.hm-actions-list .hm-actions-item2 .actions-submit i{ display: inline-block; width:90px; height: 90px; position: absolute; bottom: 8px; left: 50%; z-index: 10;margin-left: -45px; background: rgba(255,255,255,.9) url(../img2/common-v2/i_btn_dialogue.png) center center no-repeat; background-size: 33px;border-radius: 50%;  }
+	.hm-actions-list .hm-actions-item2 .actions-submit:after{content: ''; display: block; width: 106px; height: 106px;position: absolute; bottom: 0; left: 50%;z-index: 1; margin-left: -53px; background: rgba(255,255,255,.3); border-radius: 50%;}
+	.hm-actions-list .hm-actions-item2 .actions-txt{font-size: 14px;}
+}
+
+/* 连接旅行顾问动画 20160808 */
+.hm-actions-list .hm-actions-item .actions-submit i{ background-color: #fff; }
+.hm-actions-list .hm-actions-item .actions-submit:after{ z-index: 2;  opacity: 0; background: rgba(255,255,255,.6);  -webkit-animation: ball-scale-multiple 1s 0s linear infinite;
+            animation: ball-scale-multiple 1.5s 0s linear infinite;   }
+.hm-actions-list .hm-actions-item .actions-submit:before{content: ''; display: block; width: 100px; height: 100px;position: absolute; bottom: -6px; left: 50%;z-index: 1; margin-left: -50px; background: rgba(255,255,255,.3); border-radius: 50%;}
+.hm-actions-list .hm-actions-item .actions-submit:before{opacity: 0; -webkit-animation: ball-scale-multiple 1s 0s linear infinite;
+            animation: ball-scale-multiple 1.5s 0s linear infinite; -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;} 
+@media only screen and (min-width:400px) {
+	.hm-actions-list .hm-actions-item .actions-submit:before{content: ''; display: block; width: 120px; height: 120px;position: absolute; bottom: -7px; left: 50%;z-index: 1; margin-left: -60px; background: rgba(255,255,255,.3); border-radius: 50%;}
+}
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+    opacity: 0; }
+
+  5% {
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0; } }
+
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+    opacity: 0; }
+
+  5% {
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

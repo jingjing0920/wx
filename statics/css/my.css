@@ -1,0 +1,124 @@
+﻿/*会员卡*/
+.card-wp{padding:15px;}
+.card-wp .mycard{ width: 100%; height: 180px; position: relative; background: url(../img/my/cardbg.jpg); background-size: 100% 100%; -webkit-border-radius:10px; border-radius:10px;}
+.card-wp .cardtbar{padding:10px 15px 0 15px;overflow: hidden;}
+.card-wp .sixlogo{float: left;}
+.card-wp .avt{padding:3px;height: 66px;width: 66px;margin: 0 auto;background:rgba(255,255,255,.4); border-radius:50%;margin-top:-10px; margin-bottom: 5px;}
+.card-wp .avt b{display: block;height: 60px;width: 60px;border-radius:50%;overflow: hidden;border:1px solid #6dda5e;}
+.card-wp .mymsg{text-align: center;color: #fff;text-shadow:0 1px 1px rgba(0,0,0,0.3);font-size: 16px;padding-top: 5px;}
+.card-wp .mymsg p{ line-height: 20px; }
+.card-wp .mymsg p b{padding: 0 5px;}
+.card-wp .mymsg p span{padding: 0 5px;font-size: 12px;}
+.card-wp .mymsg p span.phone,.mymsg p span.mail{font-size: 14px;}
+.card-wp .my-edit{ display: inline-block; width: 24px; height: 24px; position: absolute; right: 10px; top: 10px; background: url(../img/my/i_my_edit_wht.png) center center no-repeat; background-size: 20px; }
+.signup .inputs { border-radius: 5px; border: 1px solid #c0c0c0; position: relative; background:#FFF; }
+.signup .inputs .input { height: 50px; background:0; border: 0; border-bottom: 1px solid #d6d6d6; font-size: 16px; line-height: 1em; width: 100%; text-indent: 11px; border-radius: 0; }
+.signup .inputs .input:last-child { border: 0 }
+.signup .btns { width: 100%; padding-top: 10px }
+.signup .btns .btn { display: block; margin: 10px 0; width: 100%; font-size: 18px; line-height: 50px; text-align: center; background-color: #8dc21f; border: 1px solid #77a31b; color: #FFF; border-radius: 5px }
+.signup .sTips {font-size: 15px; color: #333; line-height: 1.6em; text-align:center;  padding-top:10px;}
+.slinks{ text-align:center; padding-top:10px;}
+.btn-link{ display:inline-block; border: 1px solid #8dc21f; color: #8dc21f; border-radius: 5px; padding:0 20px; line-height:32px; font-size:14px;}
+.mb-item{ margin-bottom:18px;}
+.mb-item-list{ background:#FFF; border-top: 1px solid #ededed;border-bottom: 1px solid #ededed;}
+.mb-item-list li {width: 100%; overflow: hidden; border-bottom: 1px solid #ededed;}
+.mb-item-list li:last-child { border: 0 none; }
+.mb-item-link{display: block;color: #333;line-height: 40px;font-size: 16px; padding:10px 15px; position:relative;}
+.six-arr-right:after{ content: ''; display: inline-block; width: 16px; height: 16px; position: absolute; right: 10px; top: 50%; background: url(../img/common-v2/i_arr_right.png) center center no-repeat; background-size: 16px 16px; -webkit-transform: translateY(-50%); transform: translateY(-50%);}
+.mb-item-link .total{ font-size:16px; color:#fd672c; float:right;}
+.mb-item-link.fund{padding-right: 30px;}
+.mb-item-more{ display: block; color: #28d461; text-align: center; padding:10px 15px; line-height: 20px; font-size: 12px; }
+.mybtn{padding:10px 15px;}
+.btn-sub{height: 48px;width: 100%;font-size: 15px;border: 1px solid #41d76f;color: #fff;background:#41d76f;border-radius:5px;margin-bottom: 10px;}
+.btn-logout{height: 48px;border:1px solid #ededed;width: 100%;color: #ef7134;font-size: 15px;border-radius:5px;margin-bottom: 10px;background: #fff;}
+.btn-sub-icon .i-add-wht-mini{ display: inline-block; width: 16px; height: 16px; vertical-align: middle; position: relative; top: -2px; margin-right: 2px; }
+.my-info-box{padding-top: 15px;}
+.six-form-list{background: #fff;border-top: 1px solid #ededed;border-bottom: 1px solid #ededed;}
+.six-form-item {width: 100%; padding:0 15px; height: 50px; line-height: 50px; overflow: hidden; border-bottom: 1px solid #ededed; position: relative; font-size: 14px;}
+.six-form-item:last-child { border: 0 none; }
+.six-form-item > label{width: 90px; position: absolute; text-align: left; color:#333; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.six-form-item input, .six-form-item textarea { width: 100%; color:#999; -webkit-box-sizing: border-box; box-sizing: border-box;  -webkit-appearance: none;  border: 0; background: 0 0; padding-left: 95px;}
+.six-form-item .six-form-cont{ padding-left: 95px; height: 50px; line-height: 50px; color: #999; }
+.six-form-item.six-form-avt{ height: 70px; line-height: 70px; }
+.user-avatar{ display:inline-block; width: 40px; height: 40px; background: url(../img/my/sixavt.png) center center no-repeat; background-size: 100% 100%; -webkit-border-radius: 100px; border-radius: 100px; }
+.six-form-item.six-form-avt .six-form-cont{height: 70px; line-height: 70px;padding-top:15px; padding-bottom:15px;}
+.six-form-item .six-form-action{ font-size: 14px; color: #999; position: absolute; right: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%);}
+.six-form-phone .cgn,.six-form-phone .six-form-txt{color: #28d461;}
+.six-form-radio{ display: inline-block; margin-right: 15px; }
+.six-form-radio input{display: inline-block; padding:0; width: 20px; height: 20px; position: relative; overflow: visible; border: 0; background: 0 0; -webkit-appearance: none; outline: 0; margin-right: 8px; vertical-align: middle;}
+.six-form-radio input:before { content: ''; display: block;  width: 16px; height: 16px; border: 1px solid #dfe0e1; border-radius: 10px; -webkit-background-clip: padding-box; background-clip: padding-box; position: absolute; left: 0; top: 0;}
+.six-form-radio input:checked:after { content: ''; display: block; width: 10px; height: 10px; background: #28d461; border-radius: 7px; position: absolute; left: 4px; top: 4px;}
+.six-form-radio:last-child{margin-right: 0;}
+/*旅游基金*/
+.fund-top{ height: 200px; color: #fff; font-size: 13px; background: #f99841 url(../img/my/fund-bg.png) top right no-repeat; background-size: auto 100%; }
+.fund-box{ padding-left: 24px; padding-top: 55px; }
+.fund-box .fund-total span{ font-size: 50px; font-weight: 400px; margin-right: 4px; }
+.fund-tab-wrp{ margin-bottom: 15px; }
+.fund-how{ padding:15px; font-size: 13px; }
+.fund-how .fund-item{padding-bottom:15px; }
+.fund-how .fund-item dt{font-size:15px; color:#666; line-height:28px; margin-bottom:5px;}
+.fund-how .fund-item dt i{ display:inline-block; width:6px; height:6px; border-radius:50%; background:#41d76f; vertical-align:middle; margin-right:5px; position: relative; top: -2px; }
+.fund-how .fund-item dd{color:#999; padding-bottom:15px; line-height: 20px;}
+.fund-how .fund-item dd h2{ color:#666; font-size: 13px; font-weight:normal; line-height:24px;}
+.fund-item-list{ overflow:hidden; padding:10px 80px 10px 40px; position:relative;}
+.fund-item-list .icon-fund-song{ position:absolute; left:15px; top:12px; display:block; width:16px; height:16px; background: url(../img/my/i_lb_quan_2.png) center center no-repeat; background-size: 16px 16px; }
+.fund-item-list .fund-item-inf{ }
+.fund-item-list .fund-item-inf h3{ font-size:14px; color:#454545; height:20px; line-height:20px; margin-bottom: 2px;  overflow:hidden; white-space: nowrap;text-overflow:ellipsis; }
+.fund-item-list .fund-item-inf p{ font-size:10px; color:#b2b2b2; height:16px;line-height:16px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; }
+.fund-item-list .btns-fund{ position:absolute; right:15px; top:50%;-webkit-transform: translateY(-50%); transform: translateY(-50%);}
+.fund-item-list .btns-fund .btn-receive{ display:inline-block; min-width: 50px; line-height: 22px; text-align: center; border:1px solid #28d461; color:#28d461; border-radius:2px; font-size:12px;}
+.fund-item-list .btns-fund .btn-disabled{ background:#e9ebec; border-color:#e9ebec;  color:#ccc;}
+.fund-record .mb-item-list{ border-top: 0 none; }
+
+/* 2017-06-02 我的界面重写 */
+.my-body{background: #fff;}
+.my-body .six-content{ background:#fff;  }
+.card-wp{ background: #fff; border-bottom:1px solid #e8e8e8; }
+.card-wp .avt{ width: 60px; height: 60px; margin-top: -5px; background: none; margin-bottom: 10px; }
+.card-wp .avt img{ width: 100%; height: 100%; }
+.card-wp .mymsg p span.phone, .mymsg p span.mail{ font-size: 12px; }
+.card-wp .mymsg{text-shadow: none;}
+.mb-item{ border-top: 15px solid #EFEFF4; margin-bottom: 0; }
+.mb-item-list{ border-top:1px solid #ebf0f0; border-bottom:0 none; }
+.mb-item-link{padding:5px 30px 5px 50px;}
+.mb-item-link .mb-icon{ display: inline-block; width: 20px; height: 20px; position: absolute; left: 15px; top: 15px; }
+.mb-item-link .mb-icon.icon-trip{ background: url(../img/my/i_lb_trip.png) center center no-repeat; background-size: 18px 20px; }
+.mb-item-link .mb-icon.icon-fund{ background: url(../img/my/i_lb_fund.png) center center no-repeat; background-size: 19px 19px; }
+.mb-item-link .mb-all-trip{ float: right; color: #fcb400; }
+.mb-item-link .total{ color: #5ecc51; }
+.fund-item-list{padding: 10px 80px 10px 50px;}
+.fund-item-list .icon-fund-song{left: 18px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

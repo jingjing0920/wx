@@ -1,0 +1,70 @@
+﻿.process-img{ width: 100%; }
+.order-submit-box{padding:15px;}
+.order-submit-inner{ display: block; min-height: 200px; background: #fff; padding:20px; text-align: center; color: #333; border-radius: 4px; -webkit-border-radius: 4px; }
+.order-submit-inner .i-btn-submit{ display: inline-block; margin-top: 40px; width: 28px; height: 28px; background: url(../img2/customorder/i_btn_submit.png) center center no-repeat; background-size: 28px; }
+.order-submit-inner .order-submit-txt{ display: block;  font-size: 14px; color: #666; margin-top: 15px; }
+.order-submit-inner .order-submit-bg{ display: block; width: 100%; height: 100px; margin-top: 40px; background: url(../img2/customorder/pat_trip.png) center bottom no-repeat; background-size: auto 100px; }
+.order-submit-inner.list-active{ background: #ededed; }
+.order-submit-other{padding:15px; text-align: center; font-size: 13px; color: #999;}
+.order-submit-other a{ color: #28d461; }
+.custom-order-wrp{padding:15px;}
+.custom-order-wrp .order-item{ margin-bottom: 15px;  }
+.order-item .order-div{ display: block; background: #fff; position: relative; border-radius: 4px; -webkit-border-radius: 4px; overflow: hidden; }
+.order-item .order-div .order-status{ position: absolute; right: 10px; top: 40px; }
+.order-item .order-div.list-active{opacity: .8;}
+.order-item .order-top{padding:12px 10px; position: relative; padding-right: 70px; position: relative;}
+.order-item .order-top .order-dest{ font-size: 17px; line-height: 22px; margin-bottom: 5px; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.order-item .order-top .order-msg{ font-size: 12px; color: #999; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.order-item .order-top .order-msg em{ display: inline-block; margin:0 5px; }
+.order-item .order-trip{ height: 190px; overflow: hidden; text-align: center; background: #dedede url(../img2/customorder/pat_trip.png) center center no-repeat; background-size: 250px auto; position: relative; }
+.order-item .order-trip .no-refertrip{ display: inline-block; width: 110px; position: absolute; bottom: 15px; left: 50%; margin-left: -60px; background: #a7a7a7; color: #fff; text-align: center; padding:0 15px; font-size: 12px; height: 20px; line-height: 20px; border-radius: 10px; }
+.order-item .order-trip .refer-trip{height: 190px; position: relative;}
+.order-item .order-trip .refer-trip img{ width: 100%; position: absolute; left: 0; top: 50%;-webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.order-item .order-trip .refer-status-box{ width: 100%; min-height: 50px; padding-top: 20px; text-align: right; position: absolute; bottom: 0; left: 0; right: 0; background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.5)); }
+.order-item .order-trip .refer-status{ display: inline-block; margin-right: 10px; height: 20px; line-height:20px; font-size: 12px; color: #fff; padding:0 5px 0 22px; position: relative; border-radius: 10px;  }
+.order-item .order-trip .refer-status:after{content: ''; display: inline-block; width: 16px; height: 16px; position: absolute; left: 3px; top: 50%; margin-top: -8px; background: url(../img2/customorder/i_order_ok.png) center center no-repeat; background-size: 16px;}
+.order-item .order-trip .status-refer-trip{ background-color: #ef7134; }
+.order-item .order-trip .status-refer-notice{ background-color: #06c0a8; }
+.order-item .order-btm{padding:12px 35px 12px 55px; min-height: 60px; position: relative;}
+.order-item .order-btm:after{content:''; display: inline-block; width: 16px; height: 16px; position: absolute; right: 10px; top: 50%; margin-top: -8px; background: url(../img2/customorder/i_next_grn.png) center center no-repeat; background-size: 16px;}
+.order-item .order-btm .consult-txt{ width: 100%; -webkit-box-flex: 1; height: 36px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-pack: center;overflow: hidden; text-overflow: ellipsis;}
+.order-item .order-btm .consult-txt p{ font-size: 13px; color: #999; line-height: 18px; }
+.order-item .order-btm .order-consult{ display: inline-block; width: 36px; height: 36px; position: absolute; left: 10px; top: 50%; margin-top: -18px; background: url(../img2/customorder/i_menu_trip.png) center center no-repeat; background-size: 33px; }
+.order-item .order-btm .order-consult .ui-reddot{ position: absolute; right: 0; }
+.order-item .order-btm .order-consult .ui-reddot:before{ content: ''; position: absolute; display: block; width: 8px; height: 8px; background-color: #fff; border-radius: 5px; right: 0; top: 0; -webkit-background-clip: padding-box; background-clip: padding-box; padding: 1px;}
+.od-stauts-label{ display: inline-block; color:#999;font-size: 13px; }
+.od-label-ing{ color: #28d461}
+.od-label-end{ color: #ef7134}
+.od-label-cancel{ color: #999}
+.od-label-noget{ color: #999}
+.od-label-sign{ color: #28d461}
+.od-label-payhalf{color: #ef7134}
+.od-online{ color: #1dda3c}
+.od-offline{ color: #c9c9c9}
+.six-ft-btn{border:0 none;}
+.od-btn-submit{ display: block; width: 100%; height: 44px; line-height: 44px; background: #15c35a; color: #FFF;  text-align: center; font-size: 14px;}
+.od-i-new{ display:inline-block; width: 18px; height: 18px; position: relative; top: 3px; margin-right: 5px; background: url(../img2/common-v2/i_add_wht_32.png) no-repeat center center; background-size: 16px 16px;}
+
+/* 新增订单编号样式 20160727 */
+.order-item .order-top{padding-right: 90px;}
+.order-item .order-id{ position: absolute; right: 10px; top: 15px; font-size: 12px; color: #999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
