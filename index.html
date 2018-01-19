@@ -2,14 +2,53 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>下单</title>
+    <title>旅行满意度调查</title>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="statics/css/b2b_shop.css" />
+    <meta name="keywords" content="旅行满意度调查">
+    <meta name="description" content="旅行满意度调查-6人游旅行网">
+    <style type="text/css">
+    	* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
+		*:before, *:after { box-sizing: border-box; max-height: 100000px; }
+		body, html { width: 100%; height: 100%; }
+		html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
+		html {/* font-size: 100px; */ }
+		body{font-size: .28rem; font-weight: 300; line-height: 1.5;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #F4F5F6; color: #3B3424;  margin:0 auto; }
+		img{ border: 0;vertical-align: middle;}
+		a { background-color: transparent; text-decoration: none; }
+		a:active, a:hover { outline: 0; text-decoration: none;}
+		ul,li{list-style: none;}
+		i,em{font-style: normal;}
+		button{border:0 none;outline: 0;}
+		input{ outline: none;}
+		.clearfix { *zoom:1;}
+		.clearfix:after { display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; content: "."; }
+		.clear { clear: both; height: 0; font-size: 1px; line-height: 0px; }
+		.top-area{ padding:.3rem; }
+		.top-area .title{ padding-top: .3rem; padding-bottom: .3rem; text-align: center; font-size: .48rem; color: #3B3424; font-weight: 500;}
+		.top-area .order-info{ padding:0 .3rem; font-size: .24rem; color: #939393;}
+		.top-area .order-info .info-list{ display: block; overflow: hidden; }
+		.top-area .order-info .info-list li{float: left; display: block; width: 50%;}
+		.top-area .order-info .info-list li.col-all{ width: 100%;}
+		.content-wrap{padding:0 .3rem;}
+		.content-wrap .content-inner{ background: #FFFFFF; -webkit-border-radius: 8px; border-radius: 8px; padding:0 .4rem;}
+		.evaluate-box{padding-top: .4rem;}
+		.rate-box .rate-item{ display: block; overflow: hidden; font-size: .3rem; color: #757575; margin-bottom: .4rem;}
+		.rate-box .rate-item .rate-name{ float: left; display: block; width:1.8rem ;}
+		.rate-box .rate-item .star-list{float: left;}
+		.rate-box .rate-item .star-list .star{ float: left; display: inline-block; width: .38rem; height: .38rem; margin-right: .2rem; background: url(statics/img/star-default.png) no-repeat; background-size:cover;}
+		.rate-box .rate-item .star-list .star.select{ background: url(statics/img/star-selected.png) no-repeat; background-size: cover;}
+		.rate-box .rate-item .rate-decs{float: right; font-size: .24rem; color: #BCBCBC;}
+		.rate-box .rate-item .rate-score{ color: #F8BF37; font-size: .28rem; font-weight: 500;}
+		.rate-text{ margin-bottom: .4rem;}
+		.rate-text .text-area{ width: 100%; height: 2rem; border:1px solid #DBDBDB; background: #F9F9F9 ; border-radius: 4px; padding:10px;}
+		.rate-action{text-align: center; padding: .4rem 0;}
+		.rate-action .rate-btn{ display: block; height: .88rem; line-height: .88rem; background: #89C860; font-size: .3rem; color: #FFFFFF; border-radius: 4px;}
+		.footer{text-align: center; padding:.8rem .4rem .4rem .4rem;}
+		.footer .foot-logo{ display: inline-block; width: 2.4rem; height: .42rem; background: url(statics/img/logo.png) no-repeat; background-size:cover;}
+    </style>
     <script type="text/javascript">
     (function() {
         function refreshRem() {
@@ -27,134 +66,69 @@
 </script>
 </head> 
 <body>
-    <section class="shop-wrap">
-        <div class="top-banner">
-        	<div class="logo-area">
-        		<span class="travel-logo"><img src="statics/img/default-logo.jpg" width="100%"/></span>
-        		<span class="logo-line"></span>
-        		<span class="six-logo"><img src="statics/img/6renyou-logo.png" width="100%"/></span>
-        	</div>
-        </div>
-        <div class="shop-content">
-        	<div class="b2b-order-wrap">
-	        	<div class="b2b-form-box r8">  
-		            <div class="b2b-form-list">
-		                <ul class="b2b-form-ul">
-		                    <li class="b2b-forms-item">
-		                        <span class="form-label">目的地</span>
-		                        <div class="form-bd">
-		                            <input name="" type="text" class="ipt-text" value="" placeholder="请填写目的地">
-		                        </div>
-		                    </li>
-		                    <li class="b2b-forms-item">
-		                        <span class="form-label">出行天数</span>
-		                        <div class="form-bd">
-		                            <div class="fn-view">
-		                                <div class="fn-math">
-		                                    <span class="s1"></span>
-		                                    <input name="" class="s2 lc-number" type="numeber" value="6">
-		                                    <span class="s3"></span>
-		                                </div>
-		                            </div>
-		                        </div>
-		                    </li>
-		                    <li class="b2b-forms-item">
-		                        <span class="form-label">姓名</span>
-		                        <div class="form-bd">
-		                            <input name="" type="text" class="ipt-text" value="" placeholder="您的姓名">
-		                        </div>
-		                    </li>
-		                    <li class="b2b-forms-item">
-		                        <span class="form-label">手机号</span>
-		                        <div class="form-bd">
-		                            <input name="" type="tel" class="ipt-text" value="" placeholder="联系您的手机号">
-		                        </div>
-		                    </li>
-		                </ul>
-		            </div>
-		            <div class="b2b-actions">
-			            <button type="" class="b2b-btn">开始定制</button>
-			        </div>
-		        </div>
-		    </div>
-		    <div class="arrow-box">
-		    	<span class="icon-arrow"></span>
-		    </div>
-	        <div class="info-wrap">
-	        	<h2 class="info-tile"><span>服务优势</span></h2>
-	        	<div class="service-content">
-	        		<ul class="service-list">
-		        		<li class="service-item">
-		        			<span class="service-icon icon-1"></span>
-		        			<h4>私密旅行</h4>
-		        			<p>不和陌生人拼团</p>
-		        		</li>
-		        		<li class="service-item">
-		        			<span class="service-icon icon-2"></span>
-		        			<h4>量身定制</h4>
-		        			<p>1对1顾问设计行程</p>
-		        		</li>
-		        		<li class="service-item">
-		        			<span class="service-icon icon-3"></span>
-		        			<h4>全程保障</h4>
-		        			<p>7x24h跟踪服务</p>
-		        		</li>
-		        	</ul>
-	        	</div>
-	        </div>
-	        <div class="info-wrap">
-	        	<h2 class="info-tile"><span>定制流程</span></h2>
-	        	<div class="flow-content">
-	        		<ul class="flow-list">
-		        		<li>
-		        			<span class="flow-icon icon-1"></span>
-		        			<h4>1.提交需求</h4>
-		        			<p>5秒钟快速提交旅行需求</p>
-		        		</li>
-		        		<li>
-		        			<span class="flow-icon icon-2"></span>
-		        			<h4>2.一对一沟通</h4>
-		        			<p>10分钟旅行顾问1对1服务</p>
-		        		</li>
-		        		<li>
-		        			<span class="flow-icon icon-3"></span>
-		        			<h4>3.设计方案</h4>
-		        			<p>24小时行程方案发送到手机</p>
-		        		</li>
-		        		<li>
-		        			<span class="flow-icon icon-4"></span>
-		        			<h4>4.签约付款</h4>
-		        			<p>线上签约支付快捷方便</p>
-		        		</li>
-		        	</ul>
-	        	</div>
-	        </div>
-        </div>
-        <div class="footer">
-        	<span class="footer-slogan"></span>
-        </div>
+    <section>
+    	<div class="top-area">
+    		<h1 class="title">请对本次旅行评分</h1>
+    		<div class="order-info">
+    			<ul class="info-list">
+    				<li><span>订单号：</span><span>V123456789</span></li>
+    				<li><span>旅行顾问：</span><span>大文文</span></li>
+    				<li class="col-all"><span>目的地：</span><span>土耳其 迪拜 阿根廷 迪拜 阿根廷</span></li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="content-wrap">
+    		<div class="content-inner">
+    			<div class="evaluate-box">
+	    			<div class="rate-box">
+	    				<ul>
+	    					<li class="rate-item">
+	    						<span class="rate-name">行程安排</span>
+	    						<div class="star-list">
+	    							<a href="javascript:;" class="star select"></a>
+	    							<a href="javascript:;" class="star select"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    						</div>
+	    						<span class="rate-decs rate-score">2分</span>
+	    					</li>
+	    					<li class="rate-item">
+	    						<span class="rate-name">顾问服务</span>
+	    						<div class="star-list">
+	    							<a href="javascript:;" class="star select"></a>
+	    							<a href="javascript:;" class="star select"></a>
+	    							<a href="javascript:;" class="star select"></a>
+	    							<a href="javascript:;" class="star select"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    						</div>
+	    						<span class="rate-decs rate-score">4分</span>
+	    					</li>
+	    					<li class="rate-item">
+	    						<span class="rate-name">目的地接待</span>
+	    						<div class="star-list">
+	    							<a href="javascript:;" class="star"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    							<a href="javascript:;" class="star"></a>
+	    						</div>
+	    						<span class="rate-decs">请打分</span>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    			<div class="rate-text">
+	    				<textarea class="text-area" name="" placeholder="请填写您的问题和建议"></textarea>
+	    			</div>
+	    			<div class="rate-action">
+	    				<a href="javascript:void(0);" class="rate-btn">提交评分</a>
+	    			</div>
+	    		</div>
+    		</div>
+    	</div>
+    	<div class="footer">
+    		<span class="foot-logo"></span>
+    	</div>
     </section>
-    <!--提交成功提示-->
-    <div class="layer-wrap" style="display: none;">
-        <div class="layer-bg"></div>
-        <div class="layer-box">
-            <div class="layer-inner">
-                <div class="layer-img-top">
-                    <div class="picture-toppic2">
-                        <img src="statics/img/ib_smile.png" height="80" width="80" alt="">
-                    </div>
-                </div>
-                <div class="layer-content">
-                    <h5 class="layer-txt-h">您的需求提交成功</h5>
-                    <p class="layer-txt-c">专业顾问会尽快和您沟通</p>
-                </div>
-                <div class="layer-footer-actions">
-                    <div class="layer-btn-lg">
-                        <a href="" class="layer-btn-txt">知道了</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html> 
