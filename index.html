@@ -27,12 +27,12 @@
 		.clearfix:after { display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; content: "."; }
 		.clear { clear: both; height: 0; font-size: 1px; line-height: 0px; }
 		.top-area{ padding:.3rem; }
-		.top-area .title{ padding-top: .3rem; padding-bottom: .3rem; text-align: center; font-size: .48rem; color: #3B3424; font-weight: 500;}
+		.top-area .title{ padding-top: .3rem; padding-bottom: .3rem; text-align: center; font-size: .48rem; color: #3B3424; font-weight: 400;}
 		.top-area .order-info{ padding:0 .3rem; font-size: .24rem; color: #939393;}
 		.top-area .order-info .info-list{ display: block; overflow: hidden; }
 		.top-area .order-info .info-list li{float: left; display: block; width: 50%;}
 		.top-area .order-info .info-list li.col-all{ width: 100%;}
-		.content-wrap{padding:0 .3rem;}
+		.content-wrap{padding:0 .3rem; margin-bottom: .4rem;}
 		.content-wrap .content-inner{ background: #FFFFFF; -webkit-border-radius: 8px; border-radius: 8px; padding:0 .4rem;}
 		.evaluate-box{padding-top: .4rem;}
 		.rate-box .rate-item{ display: block; overflow: hidden; font-size: .3rem; color: #757575; margin-bottom: .4rem;}
@@ -43,11 +43,47 @@
 		.rate-box .rate-item .rate-decs{float: right; font-size: .24rem; color: #BCBCBC;}
 		.rate-box .rate-item .rate-score{ color: #F8BF37; font-size: .28rem; font-weight: 500;}
 		.rate-text{ margin-bottom: .4rem;}
-		.rate-text .text-area{ width: 100%; height: 2rem; border:1px solid #DBDBDB; background: #F9F9F9 ; border-radius: 4px; padding:10px;}
+		.rate-text .text-area{ width: 100%; height: 2rem; border:1px solid #DBDBDB; background: #F9F9F9 ; font-size: .26rem; border-radius: 4px; padding:10px;}
+		.rate-text .area-dis{ background: #EBEBEB ; color: #6B6B6B;}
 		.rate-action{text-align: center; padding: .4rem 0;}
 		.rate-action .rate-btn{ display: block; height: .88rem; line-height: .88rem; background: #89C860; font-size: .3rem; color: #FFFFFF; border-radius: 4px;}
-		.footer{text-align: center; padding:.8rem .4rem .4rem .4rem;}
-		.footer .foot-logo{ display: inline-block; width: 2.4rem; height: .42rem; background: url(statics/img/logo.png) no-repeat; background-size:cover;}
+		.rate-action .rate-btn-dis{ background: #AEAEAE ;}
+		.footer{text-align: center; padding:.4rem;}
+		.footer .foot-logo{ display: inline-block; width: 2.4rem; height: .42rem;  background: url(statics/img/logo.png) no-repeat; background-size:contain;}
+    	.items{padding-bottom: .7rem;}
+    	.items .items-title{padding-top:.6rem; font-size: .42rem; font-weight: 400; text-align: center; margin-bottom: .15rem;}
+    	.items .items-title2{margin-bottom: .6rem;}
+    	.items .text1{text-align: center; font-size: .26rem; color: #89C860; margin-bottom: .4rem;}
+    	.gift-img{padding:0 10px;}
+    	.line{ height: 10px; width: 100%; font-size: 0; border-top:1px solid rgba(207,209,211,.3); }
+    	.step-box{ overflow: hidden; min-height: .4rem; position: relative; padding-left: .6rem; margin-bottom: .4rem; }
+    	.step-box .step-num{ display: inline-block; width: .4rem; height: .4rem; position: absolute;left: 0; top: 0; line-height: .4rem; background: #89C860; color: #FFFFFF; border-radius: 50%; text-align: center; font-size: .28rem;}
+    	.step-box .step-text{ font-size: .28rem; line-height: .4rem;}
+    	.step-content{ width: 100%; overflow: hidden; margin-bottom: .5rem;}
+    	.step-content .left-content{ float: left; width: 50%;}
+    	.step-content .right-content{ float: right; width: 50%; }
+    	.step-content .counselor-info{padding-left: .4rem; text-align: center;}
+    	.step-content .counselor-info p{ font-size: .24rem; }
+    	.step-content .counselor-info .icon-hand{ display: inline-block; width: .38rem; height: .48rem; background: url(statics/img/hand.png) no-repeat; background-size:cover;}
+    	.tips{ font-size: .24rem; color: #BCBCBC; padding-bottom: .4rem; text-align: center;}
+    	/*layer*/
+		.layer-wrap {  position: fixed;  top: 0px;  left: 0px;  width: 100%;  height: 100%;  z-index: 9997; background: rgba(0,0,0,0.6);}
+		.layer-bg {  position: fixed;  top: 0px;  left: 0px;  width: 100%;  height: 100%;}
+		.layer-box{width:100%; overflow: hidden;  position: relative;  z-index: 2; top: 30%; padding:0 10%;}
+		.layer-inner{width: 100%; position: relative;  background-color: #fff;  -webkit-border-radius: 10px; border-radius: 10px;}
+		.layer-inner .layer-title{ text-align: center; color: #666; padding: 15px 0; }
+		.layer-inner .layer-title h5{font-size: 18px; font-weight: 700; }
+		.layer-inner .layer-close{ display: inline-block; width: 28px; height: 28px; position: absolute; right: 10px; top: 10px; -webkit-border-radius: 14px; border-radius: 14px; background: url(statics/img/close.png) center center no-repeat; background-size:16px; }
+		.layer-footer-actions{ display: -webkit-box; width: 100%; padding:.3rem .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-align: center; }
+		.layer-footer-actions .layer-btn-lg{ display: block;width: 100%; -webkit-box-flex: 1; text-align: center;}
+		.layer-btn-txt{ display: block; line-height: 44px; background: #89C860; font-size: 18px; color: #FFFFFF; border-radius: 4px; }
+		.layer-content{ padding:20px; font-size: 14px; color: #666; text-align: center; line-height: 20px; }
+		.layer-txt-h{ font-size: 15px; color: #848484; line-height: 24px; margin-bottom: 10px; }
+		.layer-txt-c{ font-size: 16px; color: #848484; }
+		.layer-img-top{ text-align: center; overflow: hidden; }
+		.picture-toppic2{ padding-top:25px; text-align: center; line-height: .72rem; }
+		.picture-toppic2 .icon-success{ display: inline-block; width: 36px; height: 36px; margin-right: 15px; position: relative; top: -5px; vertical-align: middle; background: url(statics/img/success.png) no-repeat; background-size: cover;}
+    	.picture-toppic2 .text{ font-size: 22px;}
     </style>
     <script type="text/javascript">
     (function() {
@@ -68,7 +104,7 @@
 <body>
     <section>
     	<div class="top-area">
-    		<h1 class="title">请对本次旅行评分</h1>
+    		<h1 class="title">请对本次旅行评价</h1>
     		<div class="order-info">
     			<ul class="info-list">
     				<li><span>订单号：</span><span>V123456789</span></li>
@@ -118,17 +154,91 @@
 	    				</ul>
 	    			</div>
 	    			<div class="rate-text">
-	    				<textarea class="text-area" name="" placeholder="请填写您的问题和建议"></textarea>
+	    				<textarea class="text-area" name="" placeholder="请发表您对本次旅行的感受"></textarea>
+	    				<textarea class="text-area area-dis" name="" placeholder="请发表您对本次旅行的感受" readonly="readonly">行程安排一点都不合理，时间太紧</textarea>
 	    			</div>
 	    			<div class="rate-action">
 	    				<a href="javascript:void(0);" class="rate-btn">提交评分</a>
+	    				<a href="javascript:void(0);" class="rate-btn rate-btn-dis">已提交</a>
 	    			</div>
 	    		</div>
+    		</div>
+    	</div>
+    	<div class="content-wrap">
+    		<div class="content-inner">
+    			<div class="items">
+    				<div class="items-title">分享旅行送好礼！</div>
+    				<p class="text1">以下礼物3选1</p>
+    				<div class="gift-img">
+    					<img src="statics/img/gift.png" width="100%"/>
+    				</div>
+    			</div>
+    			<div class="line"></div>
+    			<div class="items">
+    				<div class="items-title items-title2">如何分享？</div>
+    				<div class="step-box">
+    					<span class="step-num">1</span>
+    					<p class="step-text">在朋友圈发表旅行感受+旅行顾问二维码</p>
+    				</div>
+    				<div class="step-content">
+    					<div class="left-content">
+    						<img src="statics/img/screenshot.png" width="100%"/>
+    					</div>
+    					<div class="right-content">
+    						<div class="counselor-info">
+    							<p>顾问<strong>大琪琪</strong>的二维码</p>
+	    						<div class="code-box">
+	    							<img src="statics/img/qrcode.jpg" width="100%"/>
+	    						</div>
+	    						<p><span class="icon-hand"></span></p>
+	    						<p>长按保存二维码到手机相册</p>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="step-box">
+    					<span class="step-num">2</span>
+    					<p class="step-text">将截图发给“6人游服务监督员”，挑选喜欢的礼物～</p>
+    				</div>
+    			</div>
+    			<div class="line"></div>
+    			<div class="tips">
+    				<p>*礼物有限，每人仅限一份，记得联系监督员哦！</p>
+    			</div>
     		</div>
     	</div>
     	<div class="footer">
     		<span class="foot-logo"></span>
     	</div>
     </section>
+    <!--提交成功提示-->
+    <div class="layer-wrap" style="display: none;">
+        <div class="layer-bg"></div>
+        <div class="layer-box">
+            <div class="layer-inner">
+            	<span class="layer-close"></span>
+                <div class="layer-img-top">
+                    <div class="picture-toppic2">
+                        <span class="icon-success"></span>
+                        <span class="text">提交成功！</span>
+                    </div>
+                </div>
+                <!--低于等于3分的提示语-->
+                <div class="layer-content">
+                    <p class="layer-txt-h">很抱歉给您带来了不好的体验，我们会尽快给您回复。</p>
+                    <p class="layer-txt-c">祝您生活愉快！</p>
+                </div>
+                <!--高于3分的提示语-->
+                <div class="layer-content" style="display: none;">
+                    <p class="layer-txt-h">感谢您对6人游的支持与信任！</p>
+                    <p class="layer-txt-c">继续分享旅行送好礼</p>
+                </div>
+                <div class="layer-footer-actions">
+                    <div class="layer-btn-lg">
+                        <a href="" class="layer-btn-txt">好的</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html> 
