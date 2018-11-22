@@ -378,15 +378,17 @@
 .content-item .content-item-text{ font-size: 14px; line-height: 1.7; color: #979797;}
 .route-service-flow{ padding:15px 35px 30px 35px;}
 .route-service-flow img{ width: 100%;}
-.trip-route-footer{ width: 100%;display: -webkit-box;  display: -webkit-flex; display: flex; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 0;padding-left: 10px; background: #FFFFFF; z-index: 99; box-shadow: 0 -1px 10px rgba(0,0,0,.05) ;}
-.trip-route-footer .foot-item1{-webkit-box-flex: 0 0 15%; -webkit-flex: 0 0 15%;flex: 0 0 15%; text-align: center; padding:0 5px;}
+.trip-route-footer{ width: 100%;display: -webkit-box;  display: -webkit-flex; display: flex; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 0;padding-right: 20px; background: #FFFFFF; z-index: 99; box-shadow: 0 -1px 10px rgba(0,0,0,.05) ;}
+.trip-route-footer .foot-item1{-webkit-box-flex: 0 0 20%; -webkit-flex: 0 0 20%;flex: 0 0 20%; text-align: center; position: relative;}
 .trip-route-footer .foot-item1 .route-icons{ display: inline-block; width: 20px; height: 20px; margin: 3px auto; }
 .trip-route-footer .foot-item1 .tel{ background-position: -38px -3px; width: 21px; height: 21px;}
 .trip-route-footer .foot-item1 .consult{ background-position: -6px -3px;}
 .trip-route-footer .foot-item1 .txt{ display: block; font-size: 12px; color: #979797; line-height: 12px;}
-.trip-route-footer .foot-item2{-webkit-box-flex: 1; -webkit-flex: 1;flex: 1; padding:0 20px 0 10px;}
+.trip-route-footer .foot-item1.foot-consult:before{content: ''; display: inline-block; width: 5px; height: 30px; border-left: 1px solid rgba(220, 222, 224, .5); position: absolute; left: 0; top: 50%; margin-top: -15px; }
+.trip-route-footer .foot-item2{-webkit-box-flex: 1; -webkit-flex: 1;flex: 1; }
 .trip-route-footer .foot-item2 .route-btn-default{ display: block; height: 44px; line-height: 44px; background: #53CD85; text-align: center; font-size: 16px; color: #FFFFFF; -webkit-border-radius: 22px; border-radius: 22px;box-shadow:0px 3px 8px 0px rgba(23,25,29,0.12);}
 .trip-route-footer .foot-item2 .route-btn-default .consult2{ display: inline-block; width: 16px; height: 16px; margin-right: 8px; background-position: -188px -3px; position: relative; top: 2px;}
+.trip-route-footer .foot-item2 .route-btn-disabled{ background: #D5D5D5;}
 .trip-route-sidebar{ width: 40px; position: fixed; right: 10px; bottom: 70px; z-index: 99;}
 .trip-route-sidebar .icon-sidebar{ display: inline-block; width: 40px; height: 40px; margin-bottom: 10px;}
 .trip-route-sidebar .icon-review{ background: url(../img/trip/sidebar-review.png) no-repeat; background-size: 40px 40px;}
