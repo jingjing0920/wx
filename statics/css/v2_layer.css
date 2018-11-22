@@ -5,7 +5,7 @@
 .layer-inner{width: 100%; position: relative;  background-color: #f9f9f9;  -webkit-border-radius: 10px; border-radius: 10px;}
 .layer-inner .layer-title{ text-align: center; color: #666; padding: 15px 0; }
 .layer-inner .layer-title h5{font-size: 18px; font-weight: 700; }
-.layer-inner .layer-close{ display: inline-block; width: 28px; height: 28px; position: absolute; right: 10px; top: 10px; z-index: 900; -webkit-border-radius: 14px; border-radius: 14px; background: #e0e0e0 url(../img2/tp_close.png) center center no-repeat; background-size:16px; }
+.layer-inner .layer-close{ display: inline-block; width: 28px; height: 28px; position: absolute; right: 10px; top: 10px; z-index: 900; -webkit-border-radius: 14px; border-radius: 14px; background: #e0e0e0 url(../img2/common-v2/tp_close.png) center center no-repeat; background-size:16px; }
 .layer-footer-actions{ display: -webkit-box; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-align: center; border-top:1px solid #d4d4d4;}
 .layer-footer-actions .layer-btn-lg{ display: block;width: 100%; -webkit-box-flex: 1; text-align: center;border-right:1px solid #d4d4d4;}
 .layer-footer-actions .layer-btn-lg:last-child{border-right:0 none;}

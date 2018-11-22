@@ -2,243 +2,906 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>旅行满意度调查</title>
+    <title>行程单</title>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="旅行满意度调查">
-    <meta name="description" content="旅行满意度调查-6人游旅行网">
-    <style type="text/css">
-    	* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; max-height: 100000px;}
-		*:before, *:after { box-sizing: border-box; max-height: 100000px; }
-		body, html { width: 100%; height: 100%; }
-		html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;}
-		html {/* font-size: 100px; */ }
-		body{font-size: .28rem; font-weight: 300; line-height: 1.5;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; background-color: #F4F5F6; color: #3B3424;  margin:0 auto; }
-		img{ border: 0;vertical-align: middle;}
-		a { background-color: transparent; text-decoration: none; }
-		a:active, a:hover { outline: 0; text-decoration: none;}
-		ul,li{list-style: none;}
-		i,em{font-style: normal;}
-		button{border:0 none;outline: 0;}
-		input{ outline: none;}
-		.clearfix { *zoom:1;}
-		.clearfix:after { display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; content: "."; }
-		.clear { clear: both; height: 0; font-size: 1px; line-height: 0px; }
-		.top-area{ padding:.3rem; }
-		.top-area .title{ padding-top: .3rem; padding-bottom: .3rem; text-align: center; font-size: .48rem; color: #3B3424; font-weight: 400;}
-		.top-area .order-info{ padding:0 .3rem; font-size: .24rem; color: #939393;}
-		.top-area .order-info .info-list{ display: block; overflow: hidden; }
-		.top-area .order-info .info-list li{float: left; display: block; width: 50%;}
-		.top-area .order-info .info-list li.col-all{ width: 100%;}
-		.content-wrap{padding:0 .3rem; margin-bottom: .4rem;}
-		.content-wrap .content-inner{ background: #FFFFFF; -webkit-border-radius: 8px; border-radius: 8px; padding:0 .4rem;}
-		.evaluate-box{padding-top: .4rem;}
-		.rate-box .rate-item{ display: block; overflow: hidden; font-size: .3rem; color: #757575; margin-bottom: .4rem;}
-		.rate-box .rate-item .rate-name{ float: left; display: block; width:1.8rem ; line-height: .38rem;}
-		.rate-box .rate-item .star-list{float: left;}
-		.rate-box .rate-item .star-list .star{ float: left; display: inline-block; width: .38rem; height: .38rem; margin-right: .2rem; background: url(statics/img/star-default.png) no-repeat; background-size:cover;}
-		.rate-box .rate-item .star-list .star.select{ background: url(statics/img/star-selected.png) no-repeat; background-size: cover;}
-		.rate-box .rate-item .rate-decs{float: right; font-size: .24rem; color: #BCBCBC; line-height: .38rem;}
-		.rate-box .rate-item .rate-score{ color: #F8BF37; font-size: .28rem; font-weight: 500;}
-		.rate-text{ margin-bottom: .4rem;}
-		.rate-text .text-area{ width: 100%; height: 2rem; border:1px solid #DBDBDB; background: #F9F9F9 ; font-size: .26rem; border-radius: 4px; padding:10px;}
-		.rate-text .area-dis{ background: #EBEBEB ; color: #6B6B6B;}
-		.rate-action{text-align: center; padding: .4rem 0;}
-		.rate-action .rate-btn{ display: block; height: .88rem; line-height: .88rem; background: #89C860; font-size: .3rem; color: #FFFFFF; border-radius: 4px;}
-		.rate-action .rate-btn-dis{ background: #AEAEAE ;}
-		.footer{text-align: center; padding:.4rem;}
-		.footer .foot-logo{ display: inline-block; width: 2.4rem; height: .42rem;  background: url(statics/img/logo.png) no-repeat; background-size:contain;}
-    	.items{padding-bottom: .7rem;}
-    	.items .items-title{padding-top:.6rem; font-size: .42rem; font-weight: 400; text-align: center; margin-bottom: .15rem;}
-    	.items .items-title2{margin-bottom: .6rem;}
-    	.items .text1{text-align: center; font-size: .26rem; color: #89C860; margin-bottom: .4rem;}
-    	.gift-img{padding:0 10px;}
-    	.line{ height: 10px; width: 100%; font-size: 0; border-top:1px solid rgba(207,209,211,.3); }
-    	.step-box{ overflow: hidden; min-height: .4rem; position: relative; padding-left: .6rem; margin-bottom: .4rem; }
-    	.step-box .step-num{ display: inline-block; width: .4rem; height: .4rem; position: absolute;left: 0; top: 0; line-height: .4rem; background: #89C860; color: #FFFFFF; border-radius: 50%; text-align: center; font-size: .28rem;}
-    	.step-box .step-text{ font-size: .28rem; line-height: .4rem;}
-    	.step-content{ width: 100%; overflow: hidden; margin-bottom: .5rem;}
-    	.step-content .left-content{ float: left; width: 50%;}
-    	.step-content .right-content{ float: right; width: 50%; }
-    	.step-content .counselor-info{padding-left: .4rem; text-align: center;}
-    	.step-content .counselor-info p{ font-size: .24rem; }
-    	.step-content .counselor-info .icon-hand{ display: inline-block; width: .38rem; height: .48rem; background: url(statics/img/hand.png) no-repeat; background-size:cover;}
-    	.tips{ font-size: .24rem; color: #BCBCBC; padding-bottom: .4rem; text-align: center;}
-    	/*layer*/
-		.layer-wrap {  position: fixed;  top: 0px;  left: 0px;  width: 100%;  height: 100%;  z-index: 9997; background: rgba(0,0,0,0.6);}
-		.layer-bg {  position: fixed;  top: 0px;  left: 0px;  width: 100%;  height: 100%;}
-		.layer-box{width:100%; overflow: hidden;  position: relative;  z-index: 2; top: 30%; padding:0 10%;}
-		.layer-inner{width: 100%; position: relative;  background-color: #fff;  -webkit-border-radius: 10px; border-radius: 10px;}
-		.layer-inner .layer-title{ text-align: center; color: #666; padding: 15px 0; }
-		.layer-inner .layer-title h5{font-size: 18px; font-weight: 700; }
-		.layer-inner .layer-close{ display: inline-block; width: 28px; height: 28px; position: absolute; right: 10px; top: 10px; -webkit-border-radius: 14px; border-radius: 14px; background: url(statics/img/close.png) center center no-repeat; background-size:16px; }
-		.layer-footer-actions{ display: -webkit-box; width: 100%; padding:.3rem .4rem; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-align: center; }
-		.layer-footer-actions .layer-btn-lg{ display: block;width: 100%; -webkit-box-flex: 1; text-align: center;}
-		.layer-btn-txt{ display: block; line-height: 44px; background: #89C860; font-size: 18px; color: #FFFFFF; border-radius: 4px; }
-		.layer-content{ padding:20px; font-size: 14px; color: #666; text-align: center; line-height: 20px; }
-		.layer-txt-h{ font-size: 15px; color: #848484; line-height: 24px; margin-bottom: 10px; }
-		.layer-txt-c{ font-size: 16px; color: #848484; }
-		.layer-img-top{ text-align: center; overflow: hidden; }
-		.picture-toppic2{ padding-top:25px; text-align: center; line-height: .72rem; }
-		.picture-toppic2 .icon-success{ display: inline-block; width: 36px; height: 36px; margin-right: 15px; position: relative; top: -5px; vertical-align: middle; background: url(statics/img/success.png) no-repeat; background-size: cover;}
-    	.picture-toppic2 .text{ font-size: 22px;}
-    </style>
-    <script type="text/javascript">
-    (function() {
-        function refreshRem() {
-            var width = docEl.getBoundingClientRect().width;
-            rem = width / (BASE_WIDTH / ROOT_FONT_SIZE);
-            docEl.style.fontSize = rem + "px";
-        }
-        var tid = null, docEl = document.documentElement, BASE_WIDTH = 750, ROOT_FONT_SIZE = 100;
-        refreshRem();
-         window.addEventListener("resize", function() {
-            clearTimeout(tid); 
-            tid = setTimeout(refreshRem, 300);
-        }, false);
-    })();
-</script>
-</head> 
-<body>
-    <section>
-    	<div class="top-area">
-    		<h1 class="title">请对本次旅行评价</h1>
-    		<div class="order-info">
-    			<ul class="info-list">
-    				<li><span>订单号：</span><span>V123456789</span></li>
-    				<li><span>旅行顾问：</span><span>大文文</span></li>
-    				<li class="col-all"><span>目的地：</span><span>土耳其 迪拜 阿根廷 迪拜 阿根廷</span></li>
+    <link rel="stylesheet" type="text/css" href="statics/css/swiper-4.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="statics/css/v2_app_base.css" />
+    <link rel="stylesheet" type="text/css" href="statics/css/v2_layer.css">
+    <link rel="stylesheet" type="text/css" href="statics/css/v2_trip.css" />
+    
+</head>
+<body class="trip-route">
+	
+	
+	<!--主体内容-->
+    <section class="trip-route-content">
+    	<div class="trip-route-banner">
+    		<a href="" class="top-back"></a>
+    		<a href="" class="top-share"></a>
+    		<div class="trip-swiper-banner">
+    			<img src="statics/img/tmp/tmp.jpg"/>
+    		</div>
+    		<img class="mask-top" src="statics/img/trip/mask-top.png"/>
+    	</div>
+    	<div class="trip-route-info">
+    		<h1 class="route-title">【斯里兰卡9晚10天】一半茶香,一半海洋，去过就不曾遗忘</h1>
+    		<div class="route-baseInfo clearfix">
+    			<!--报价-->
+    			<div class="route-price">
+    				<dfn>¥</dfn>
+    				<span class="price">16000</span>
+    				(总价)
+    			</div>
+    			<!--蓝本天数-->
+    			<div class="route-days-total" style="display: none;">
+    				<span>10</span>天
+    			</div>
+    			<div class="route-consult-num">
+    				1084人咨询过
+    			</div>
+    		</div>
+    	</div>
+    	<!--出行信息-->
+    	<div class="route-travel-info">
+    		<div class="travel-info">
+    			<ul class="clearfix">
+    				<li class="info-list">
+    					<span>出行人数：<b>6人</b></span>
+    				</li>
+    				<li class="info-list">
+    					<span>出行天数：<b>10天</b></span>
+    				</li>
+    				<li class="info-list">
+    					<span>出  发  地：<b>北京</b></span>
+    				</li>
+    				<li class="info-list">
+    					<span>出行日期：<b>2018.12.20</b></span>
+    				</li>
     			</ul>
     		</div>
     	</div>
-    	<div class="content-wrap">
-    		<div class="content-inner">
-    			<div class="evaluate-box">
-	    			<div class="rate-box">
-	    				<ul>
-	    					<li class="rate-item">
-	    						<span class="rate-name">行程安排</span>
-	    						<div class="star-list">
-	    							<a href="javascript:;" class="star select"></a>
-	    							<a href="javascript:;" class="star select"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    						</div>
-	    						<span class="rate-decs rate-score">2分</span>
-	    					</li>
-	    					<li class="rate-item">
-	    						<span class="rate-name">顾问服务</span>
-	    						<div class="star-list">
-	    							<a href="javascript:;" class="star select"></a>
-	    							<a href="javascript:;" class="star select"></a>
-	    							<a href="javascript:;" class="star select"></a>
-	    							<a href="javascript:;" class="star select"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    						</div>
-	    						<span class="rate-decs rate-score">4分</span>
-	    					</li>
-	    					<li class="rate-item">
-	    						<span class="rate-name">目的地接待</span>
-	    						<div class="star-list">
-	    							<a href="javascript:;" class="star"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    							<a href="javascript:;" class="star"></a>
-	    						</div>
-	    						<span class="rate-decs">请打分</span>
-	    					</li>
-	    				</ul>
-	    			</div>
-	    			<div class="rate-text">
-	    				<textarea class="text-area" name="" placeholder="请发表您对本次旅行的感受"></textarea>
-	    				<!--<textarea class="text-area area-dis" name="" placeholder="请发表您对本次旅行的感受" readonly="readonly">行程安排一点都不合理，时间太紧</textarea>-->
-	    			</div>
-	    			<div class="rate-action">
-	    				<a href="javascript:void(0);" class="rate-btn">提交评分</a>
-	    				<!--<a href="javascript:void(0);" class="rate-btn rate-btn-dis">已提交</a>-->
-	    			</div>
-	    		</div>
+    	<div class="route-service">
+    		<div class="route-service-item">
+    			<span><i class="route-icons"></i>量身定制</span>
+    		</div>
+    		<div class="route-service-item">
+    			<span><i class="route-icons"></i>专车专导</span>
+    		</div>
+    		<div class="route-service-item">
+    			<span><i class="route-icons"></i>私家小团</span>
     		</div>
     	</div>
-    	<div class="content-wrap">
-    		<div class="content-inner">
-    			<div class="items">
-    				<div class="items-title">分享旅行送好礼！</div>
-    				<p class="text1">以下礼物3选1</p>
-    				<div class="gift-img">
-    					<img src="statics/img/gift.jpg" width="100%"/>
-    				</div>
+    	<!--推荐理由-->
+    	<!--<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>推荐理由</h2>
+    		</div>
+    		<div class="route-reason">
+    			<div class="reason-text">
+    				如果您既想体验京都的古朴风韵，又想感受它的世俗风情，那么就跟我一起畅游这条经典京都线。白天走进朴素雅致的二条城，近距离感受千年之前的王室御所，或是穿越朱红的千本鸟居，通往最接近神明的地方；晚上走在灯笼微明…
     			</div>
-    			<div class="line"></div>
-    			<div class="items">
-    				<div class="items-title items-title2">如何分享？</div>
-    				<div class="step-box">
-    					<span class="step-num">1</span>
-    					<p class="step-text">在朋友圈发表旅行感受+旅行顾问二维码</p>
-    				</div>
-    				<div class="step-content">
-    					<div class="left-content">
-    						<img src="statics/img/screenshot.jpg" width="100%"/>
-    					</div>
-    					<div class="right-content">
-    						<div class="counselor-info">
-    							<p>顾问<strong>大琪琪</strong>的二维码</p>
-	    						<div class="code-box">
-	    							<img src="statics/img/qrcode.jpg" width="100%"/>
+    			<div class="route-fold-box">
+    				<p class="fold"><span class="icon-arrow-down"></span></p>
+    			</div>
+    		</div>
+    	</div>-->
+    	<!--行程亮点-->
+    	<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>行程亮点</h2>
+    		</div>
+    		<div class="route-lights">
+    			<div class="lights">
+    				<p>火车之旅：高山火车和海边火车可以看到最美的高山茶园和最美海岸线</p>
+    			</div>
+    			<div class="lights">
+    				<p>雅拉公园：坐着越野车寻找金钱豹的足迹</p>
+    			</div>
+    			<div class="lights">
+    				<p>海上立钓：观赏当地渔夫的传统海上</p>
+    			</div>
+    		</div>
+    	</div>
+    	<!--特色景点-->
+    	<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>特色景点</h2>
+    		</div>
+    		<div class="route-special">
+    			<div class="swiper-container route-special-container fraction">
+    				<div class="swiper-wrapper">
+    					<div class="swiper-slide">
+    						<div class="goods">
+    							<div class="special-box">
+	    							<div class="img">
+	    								<img src="statics/img/tmp/tmp.jpg" />
+	    								<span class="local">努沃勒埃利耶</span>
+	    							</div>
+	    							<div class="title">
+	    								<p>茶园游览</p>
+	    							</div>
 	    						</div>
-	    						<p><span class="icon-hand"></span></p>
-	    						<p>长按保存二维码到手机相册</p>
+    						</div>
+    					</div>
+    					<div class="swiper-slide">
+    						<div class="goods">
+    							<div class="special-box">
+	    							<div class="img">
+	    								<img src="statics/img/tmp/tmp.jpg" />
+	    								<span class="local">努沃勒埃利耶</span>
+	    							</div>
+	    							<div class="title">
+	    								<p>雅拉国家森林公园雅拉国家森林公园</p>
+	    							</div>
+	    						</div>
+    						</div>
+    					</div>
+    					<div class="swiper-slide">
+    						<div class="goods">
+    							<div class="special-box">
+	    							<div class="img">
+	    								<img src="statics/img/tmp/tmp.jpg" />
+	    								<span class="local">努沃勒埃利耶</span>
+	    							</div>
+	    							<div class="title">
+	    								<p>山间火车</p>
+	    							</div>
+	    						</div>
     						</div>
     					</div>
     				</div>
-    				<div class="step-box">
-    					<span class="step-num">2</span>
-    					<p class="step-text">将截图发给“6人游服务监督员”，挑选喜欢的礼物～</p>
-    				</div>
-    			</div>
-    			<div class="line"></div>
-    			<div class="tips">
-    				<p>*礼物有限，每人仅限一份，记得联系监督员哦！</p>
+    				<div class="swiper-pagination"></div>
     			</div>
     		</div>
     	</div>
-    	<div class="footer">
-    		<span class="foot-logo"></span>
+    	<div class="route-advantage">
+    		<img src="statics/img/trip/branded-advantages.png"/>
     	</div>
+    	<!--行程详情-->
+    	<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>行程详情</h2>
+    			<div class="route-opr">
+                    <div class="checkbox">
+                        <input type="checkbox" checked="checked">
+                        <label></label>
+                    </div>
+                </div>
+    		</div>
+    		<div class="route-details-box">
+    			<section class="route-days-item">
+    				<div class="route-days-hd bd-top-8 clearfix">
+    					<div class="days">
+    						<span class="num">1</span>Day
+    					</div>
+    					<p class="date">2018.05.03</p>
+    					<div class="route-line">
+    						尼甘布 - 康提 - 丹布拉
+    					</div>
+    					<p class="route-count"><span>5个景点</span><span>2个活动</span></p>
+    					<div class="foldbar">
+    						<span class="i-arrow-up"></span>
+    						<!--<span class="i-arrow-down"></span>--> <!--收起图标-->
+    					</div>
+    				</div>
+    				<div class="route-days-bd bd-top-8">
+    					<div class="route-details-bd">
+    						<!--用餐-->
+    						<div class="route-name route-dining">
+    							<i class="i-spot icon-dining"></i>
+    							<div class="dining-detail">
+    								<span><b>早餐</b>酒店用餐</span>
+    								<span><b>中餐</b>敬请自理</span>
+    								<span><b>晚餐</b>敬请自理</span>
+    							</div>
+    						</div>
+    						<!--备注-->
+    						<div class="route-name route-remarks">
+    							<i class="i-spot icon-remarks"></i>
+    							<div class="remarks-detail">
+    								<p><strong>贴心服务：</strong>机场工作人员廊桥旁接机，陪同办理入境手续，并享有专人提取托运行李服务，缓解长途飞行后的排队疲劳。 </p>
+    								<p><strong>6人游专享：</strong>全程专属中文导游+专车服务，车上为您配备纸巾，水，新鲜水果等，时刻为您提供贴心服务，尽享旅途舒适。</p>
+    							</div>
+    						</div>
+    						<!--航班-->
+    						<div class="route-name route-flight">
+    							<i class="i-spot icon-flight"></i>
+    							<h4 class="name">航班信息</h4>
+    						</div>
+    						<div class="flight-detail">
+    							<ul class="flight-list">
+    								<li class="flight-item">
+    									<div class="flight-simple">
+    										<div class="flight-top">
+	    										<span class="flight-day">Day1</span>
+	    										<span class="flight-airline">大韩航空(KE637)</span>
+	    									</div>
+	    									<div class="airpot-info">
+			                                    <div class="from-info">
+			                                        <p class="from-place ellipsis">北京</p>
+			                                        <p class="from-time time-font">06:35</p>
+			                                    </div>
+			                                    <div class="time-info">
+			                                        <div class="plane-info">
+			                                            <div class="arrow-right"></div>
+			                                            <span class="route-icons plane-info-icon"></span>
+			                                        </div>
+			                                    </div>
+			                                    <div class="to-info">
+			                                        <p class="to-place ellipsis">新加坡</p>
+			                                        <p class="to-time time-font">08:45<i class="plus">+1</i></p>
+			                                    </div>
+			                                </div>
+    									</div>
+    									<div class="flight-foldbar">
+    										<div class="flight-foldarea">
+    											<span class="i-arrow-down"></span>
+    										</div>
+		                                </div>
+    								</li>
+    								<!--展开效果-->
+    								<li class="flight-item">
+    									<div class="flight-simple">
+    										<div class="flight-top">
+	    										<span class="flight-day">Day1~3</span>
+	    										<span class="flight-airline">大韩航空(KE637)</span>
+	    									</div>
+	    									<div class="airpot-info">
+			                                    <div class="from-info">
+			                                        <p class="from-place ellipsis">新加坡</p>
+			                                        <p class="from-time time-font">06:35</p>
+			                                    </div>
+			                                    <div class="time-info">
+			                                        <div class="plane-info">
+			                                            <div class="arrow-right"></div>
+			                                            <span class="route-icons plane-info-icon"></span>
+			                                        </div>
+			                                    </div>
+			                                    <div class="to-info">
+			                                        <p class="to-place ellipsis">布宜诺斯艾利斯</p>
+			                                        <p class="to-time time-font">08:45</p>
+			                                    </div>
+			                                </div>
+    									</div>
+    									<div class="flight-fold" style="display: block;">
+		                                	<div class="flight-fold-item">
+		                                		<div class="fold-info tr">
+		                                			<span class="tit">出发机场</span>
+		                                			<p class="airport">PEK首都机场 T2</p>
+		                                		</div>
+		                                		<div class="space-info">&nbsp;</div>
+		                                		<div class="fold-info">
+		                                			<span class="tit">抵达机场</span>
+		                                			<p class="airport">SIN樟宜机场 T1</p>
+		                                		</div>
+		                                	</div>
+		                                	<div class="flight-fold-item">
+		                                		<div class="fold-info tr">
+		                                			<span class="tit">出发日期</span>
+		                                			<p class="date">2018.05.02</p>
+		                                		</div>
+		                                		<div class="space-info">&nbsp;</div>
+		                                		<div class="fold-info">
+		                                			<span class="tit">抵达日期</span>
+		                                			<p class="date">2018.05.02</p>
+		                                		</div>
+		                                	</div>
+		                                </div>
+		                                <div class="flight-foldbar">
+    										<div class="flight-foldarea">
+    											<span class="i-arrow-up"></span>
+    										</div>
+		                                </div>
+    								</li>
+    							</ul>
+    						</div>
+    						<!--景点-->
+    						<div class="route-name route-scenic">
+    							<i class="i-spot icon-scenic"></i>
+    							<h4 class="name">尼甘布鱼市</h4>
+    						</div>
+    						<!--描述-->
+    						<div class="route-describle">
+    							甘布是个著名的鱼村，一共有两的个鱼市，一个在中心城区，另外一个在外围。菜市场附近的鱼市可以观察到尼甘布居民日常生活的状态。外围的与市场则规模更大更开放市，就会看到规模浩大与市场，另外一个在外围。 
+    						</div>
+    						<!--三张图片-->
+    						<div class="img-wrap img3">
+    							<div class="img-item1">
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    							</div>
+    							<div class="img-item2">
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    							</div>
+    						</div>
+    						<!--体验-->
+    						<div class="route-name route-experience">
+    							<i class="i-spot icon-experience"></i>
+    							<h4 class="name">斯里兰卡大象孤儿院</h4>
+    						</div>
+    						<!--描述-->
+    						<div class="route-describle">
+    							主要收养那些无家可归、掉入深坑或陷阱、脱离象群，尤其是身受重伤或身患疾病的幼象。建院以来，入选孤儿院的对象范围不断扩大，那些掉入陷阱受重伤的、脱离群体迷途的、因战火负伤的及患病的幼象都有资格住进孤儿院。
+    						</div>
+    						<!--两张图片-->
+    						<div class="img-wrap img2">
+    							<div class="img-item">
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    							</div>
+    							<div class="img-item">
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    							</div>
+    						</div>
+    						<!--酒店-->
+    						<div class="route-name route-hotel">
+    							<i class="i-spot icon-hotel"></i>
+    							<h4 class="name">雷尼利德酒店</h4>
+    							<p class="hotel-level">
+    								<span class="star">
+                                        <em class="route-icons icon-star"></em>
+                                        <em class="route-icons icon-star"></em>
+                                        <em class="route-icons icon-star"></em>
+                                        <em class="route-icons icon-star"></em>
+                                    </span>
+                                    <i>四星级酒店</i>
+    							</p>
+    						</div>
+    						<!--描述-->
+    						<div class="route-describle">
+    							酒店位于市中心的Sukhumvit 1，提供前往Nana BTS Skytrain轻轨列车站的免费班车服务。这家酒店设有一个游泳池、一个健身中心以及覆盖酒店各处的免费无线网络连接。提供轻轨列车站的免费班车服务 。
+    						</div>
+    						<!--一张图片-->
+    						<div class="img-wrap img1">
+    							<img src="statics/img/tmp/tmp.jpg"/>
+    						</div>
+    					</div>
+    				</div>
+    			</section>
+    			<section class="route-days-item">
+    				<div class="route-days-hd bd-top-8 clearfix">
+    					<div class="days">
+    						<span class="num">2</span>Day
+    					</div>
+    					<p class="date">2018.05.03</p>
+    					<div class="route-line">
+    						尼甘布 → 康提 → 丹布拉 → 锡吉里亚
+    					</div>
+    					<p class="route-count"><span>5个景点</span><span>2个活动</span></p>
+    					<div class="foldbar">
+    						<span class="i-arrow-down"></span> <!--收起图标-->
+    					</div>
+    				</div>
+    				<div class="route-days-bd bd-top-8">
+    					<div class="route-details-bd">
+    						<!--用餐-->
+    						<div class="route-name route-dining">
+    							<i class="i-spot icon-dining"></i>
+    							<div class="dining-detail">
+    								<span><b>早餐</b>酒店用餐</span>
+    								<span><b>中餐</b>敬请自理</span>
+    								<span><b>晚餐</b>敬请自理</span>
+    							</div>
+    						</div>
+    						<!--备注-->
+    						<div class="route-name route-remarks">
+    							<i class="i-spot icon-remarks"></i>
+    							<div class="remarks-detail">
+    								<p><strong>贴心服务：</strong>机场工作人员廊桥旁接机，陪同办理入境手续，并享有专人提取托运行李服务，缓解长途飞行后的排队疲劳。 </p>
+    								<p><strong>6人游专享：</strong>全程专属中文导游+专车服务，车上为您配备纸巾，水，新鲜水果等，时刻为您提供贴心服务，尽享旅途舒适。</p>
+    							</div>
+    						</div>
+    						<!--景点-->
+    						<div class="route-name route-scenic">
+    							<i class="i-spot icon-scenic"></i>
+    							<h4 class="name">佩拉德尼亚皇家植物园</h4>
+    						</div>
+    						<!--描述-->
+    						<div class="route-describle">
+    							甘布是个著名的鱼村，一共有两的个鱼市，一个在中心城区，另外一个在外围。菜市场附近的鱼市可以观察到尼甘布居民日常生活的状态。外围的与市场则规模更大更开放市，就会看到规模浩大与市场，另外一个在外围。 
+    						</div>
+    						<!--三张图片-->
+    						<div class="img-wrap img3">
+    							<div class="img-item1">
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    							</div>
+    							<div class="img-item2">
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    								<img src="statics/img/tmp/tmp.jpg"/>
+    							</div>
+    						</div>
+    						<!--酒店-->
+    						<div class="route-name route-hotel">
+    							<i class="i-spot icon-hotel"></i>
+    							<h4 class="name">雷尼利德酒店</h4>
+    							<p class="hotel-level">
+    								<span class="star">
+                                        <em class="route-icons icon-star"></em>
+                                        <em class="route-icons icon-star"></em>
+                                        <em class="route-icons icon-star"></em>
+                                        <em class="route-icons icon-star"></em>
+                                    </span>
+                                    <i>四星级酒店</i>
+    							</p>
+    						</div>
+    						<!--描述-->
+    						<div class="route-describle">
+    							<p>同上一天酒店 <a href="" class="link">更多详情>></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</section>
+    			<section class="route-days-item">
+    				<div class="route-days-hd bd-top-8 clearfix">
+    					<div class="days">
+    						<span class="num">3</span>Day
+    					</div>
+    					<p class="date">2018.05.03</p>
+    					<div class="route-line">
+    						尼甘布 - 康提 - 丹布拉
+    					</div>
+    					<p class="route-count"><span>5个景点</span><span>2个活动</span></p>
+    					<div class="foldbar">
+    						<span class="i-arrow-down"></span> <!--收起图标-->
+    					</div>
+    				</div>
+    			</section>
+    			<section class="route-days-item">
+    				<div class="route-days-hd bd-top-8 clearfix">
+    					<div class="days">
+    						<span class="num">4</span>Day
+    					</div>
+    					<!--<p class="date">2018.05.03</p>-->
+    					<div class="route-line">
+    						尼甘布 - 康提 - 丹布拉
+    					</div>
+    					<p class="route-count"><span>5个景点</span></p>
+    					<div class="foldbar">
+    						<span class="i-arrow-down"></span> <!--收起图标-->
+    					</div>
+    				</div>
+    			</section>
+    			<section class="route-days-item">
+    				<div class="route-days-hd bd-top-8 clearfix">
+    					<div class="days">
+    						<span class="num">16</span>Day
+    					</div>
+    					<!--<p class="date">2018.05.03</p>-->
+    					<div class="route-line">
+    						尼甘布 - 康提 - 丹布拉
+    					</div>
+    					<p class="route-count"><span>5个景点</span></p>
+    					<div class="foldbar">
+    						<span class="i-arrow-down"></span> <!--收起图标-->
+    					</div>
+    				</div>
+    			</section>
+    		</div>
+    	</div>
+    	<!--酒店信息-->
+    	<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>酒店信息</h2>
+    		</div>
+    		<div class="hotel-group">
+    			<div class="swiper-container hotel-group-container fraction">
+    				<div class="swiper-wrapper">
+    					<div class="swiper-slide">
+    						<ul class="hotel-group-list">
+    							<li class="hotel-group-item">
+    								<div class="hotel-image">
+    									<img src="statics/img/tmp/tmp.jpg"/>
+    									<span class="local">坎昆</span>
+    								</div>
+    								<div class="hotel-info">
+    									<p class="day-interval">Day1~3</p>
+    									<h4 class="hotel-name">贝斯特韦特特韦特度假酒店</h4>
+    									<p class="hotel-level">
+		    								<span class="star">
+		                                        <em class="route-icons icon-star"></em>
+		                                        <em class="route-icons icon-star"></em>
+		                                        <em class="route-icons icon-star"></em>
+		                                        <em class="route-icons icon-star"></em>
+		                                    </span>
+		                                    <i>国际奢华四星级酒店</i>
+		    							</p>
+    								</div>
+    							</li>
+    							<li class="hotel-group-item">
+    								<div class="hotel-image">
+    									<img src="statics/img/tmp/tmp.jpg"/>
+    									<span class="local">坎昆</span>
+    								</div>
+    								<div class="hotel-info">
+    									<p class="day-interval">Day4~7</p>
+    									<h4 class="hotel-name">素坤逸路顶级酒店</h4>
+    									<p class="hotel-level">
+		    								<span class="star">
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                    </span>
+		                                    <i>当地四星级酒店</i>
+		    							</p>
+    								</div>
+    							</li>
+    						</ul>
+    					</div>
+    					<div class="swiper-slide">
+    						<ul class="hotel-group-list">
+    							<li class="hotel-group-item">
+    								<div class="hotel-image">
+    									<img src="statics/img/tmp/tmp.jpg"/>
+    									<span class="local">坎昆</span>
+    								</div>
+    								<div class="hotel-info">
+    									<p class="day-interval">Day1~3</p>
+    									<h4 class="hotel-name">贝斯特韦特特韦特度假酒店</h4>
+    									<p class="hotel-level">
+		    								<span class="star">
+		                                        <em class="route-icons icon-star"></em>
+		                                        <em class="route-icons icon-star"></em>
+		                                        <em class="route-icons icon-star"></em>
+		                                        <em class="route-icons icon-star"></em>
+		                                    </span>
+		                                    <i>国际四星级酒店</i>
+		    							</p>
+    								</div>
+    							</li>
+    							<li class="hotel-group-item">
+    								<div class="hotel-image">
+    									<img src="statics/img/tmp/tmp.jpg"/>
+    									<span class="local">坎昆</span>
+    								</div>
+    								<div class="hotel-info">
+    									<p class="day-interval">Day4~7</p>
+    									<h4 class="hotel-name">素坤逸路顶级酒店</h4>
+    									<p class="hotel-level">
+		    								<span class="star">
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                        <em class="route-icons icon-star-hollow"></em>
+		                                    </span>
+		                                    <i>当地四星级酒店</i>
+		    							</p>
+    								</div>
+    							</li>
+    						</ul>
+    					</div>
+    				</div>
+    				<div class="swiper-pagination"></div>
+    			</div>
+    		</div>
+    	</div>
+    	<!--交通信息-->
+    	<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>交通信息</h2>
+    		</div>
+    		<div class="traffic-group">
+    			<div class="swiper-container traffic-group-container fraction">
+    				<div class="swiper-wrapper">
+    					<div class="swiper-slide">
+    						<ul class="flight-list">
+								<li class="flight-item">
+									<div class="flight-simple">
+										<div class="flight-top">
+    										<span class="flight-day">Day1</span>
+    										<span class="flight-airline">大韩航空(KE637)</span>
+    									</div>
+    									<div class="airpot-info">
+		                                    <div class="from-info">
+		                                        <p class="from-place ellipsis">新加坡</p>
+		                                        <p class="from-time time-font">06:35</p>
+		                                    </div>
+		                                    <div class="time-info">
+		                                        <div class="plane-info">
+		                                            <div class="arrow-right"></div>
+		                                            <span class="route-icons plane-info-icon"></span>
+		                                        </div>
+		                                    </div>
+		                                    <div class="to-info">
+		                                        <p class="to-place ellipsis">斯里兰卡</p>
+		                                        <p class="to-time time-font">08:45</p>
+		                                    </div>
+		                                </div>
+									</div>
+									<div class="flight-fold" style="display: block;">
+	                                	<div class="flight-fold-item">
+	                                		<div class="fold-info tr">
+	                                			<span class="tit">出发机场</span>
+	                                			<p class="airport">PEK首都机场 T2</p>
+	                                		</div>
+	                                		<div class="space-info">&nbsp;</div>
+	                                		<div class="fold-info">
+	                                			<span class="tit">抵达机场</span>
+	                                			<p class="airport">SIN樟宜机场 T1</p>
+	                                		</div>
+	                                	</div>
+	                                	<div class="flight-fold-item">
+	                                		<div class="fold-info tr">
+	                                			<span class="tit">出发日期</span>
+	                                			<p class="date">2018.05.02</p>
+	                                		</div>
+	                                		<div class="space-info">&nbsp;</div>
+	                                		<div class="fold-info">
+	                                			<span class="tit">抵达日期</span>
+	                                			<p class="date">2018.05.02</p>
+	                                		</div>
+	                                	</div>
+	                               </div>
+								</li>
+							</ul>
+    					</div>
+    					<div class="swiper-slide">
+    						<ul class="flight-list">
+								<li class="flight-item">
+									<div class="flight-simple">
+										<div class="flight-top">
+    										<span class="flight-day">Day4</span>
+    										<span class="flight-airline">大韩航空(KE637)</span>
+    									</div>
+    									<div class="airpot-info">
+		                                    <div class="from-info">
+		                                        <p class="from-place ellipsis">新加坡</p>
+		                                        <p class="from-time time-font">06:35</p>
+		                                    </div>
+		                                    <div class="time-info">
+		                                        <div class="plane-info">
+		                                            <div class="arrow-right"></div>
+		                                            <span class="route-icons plane-info-icon"></span>
+		                                        </div>
+		                                    </div>
+		                                    <div class="to-info">
+		                                        <p class="to-place ellipsis">斯里兰卡</p>
+		                                        <p class="to-time time-font">08:45</p>
+		                                    </div>
+		                                </div>
+									</div>
+									<div class="flight-fold" style="display: block;">
+	                                	<div class="flight-fold-item">
+	                                		<div class="fold-info tr">
+	                                			<span class="tit">出发机场</span>
+	                                			<p class="airport">PEK首都机场 T2</p>
+	                                		</div>
+	                                		<div class="space-info">&nbsp;</div>
+	                                		<div class="fold-info">
+	                                			<span class="tit">抵达机场</span>
+	                                			<p class="airport">SIN樟宜机场 T1</p>
+	                                		</div>
+	                                	</div>
+	                                	<div class="flight-fold-item">
+	                                		<div class="fold-info tr">
+	                                			<span class="tit">出发日期</span>
+	                                			<p class="date">2018.05.02</p>
+	                                		</div>
+	                                		<div class="space-info">&nbsp;</div>
+	                                		<div class="fold-info">
+	                                			<span class="tit">抵达日期</span>
+	                                			<p class="date">2018.05.02</p>
+	                                		</div>
+	                                	</div>
+	                               </div>
+								</li>
+							</ul>
+    					</div>
+    				</div>
+    				<div class="swiper-pagination"></div>
+    			</div>
+    			<div class="traffic-tips">
+    				* 所有航班起抵时间均为当地时间(24小时制)仅供参考，最终确认以出团通知书为准。
+    			</div>
+    		</div>
+    	</div>
+    	<!--费用说明-->
+    	<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>费用说明</h2>
+    		</div>
+    		<div class="content-item">
+    			<h5 class="content-item-title">费用明细</h5>
+    			<div class="content-item-text">
+    				◆ 此报价以______人成团为基础报价，若人数变更，我司保留调整报价的权利；<br>◆ 此价格为无大型活动、大型会议、非周末的平日报价，如订团日期正遇会展、周末，我司有权调整价格；
+    			</div>
+    		</div>
+    		<div class="content-item">
+    			<h5 class="content-item-title">费用包含</h5>
+    			<div class="content-item-text">
+    				◆ 酒店：行程内推荐酒店总计曼谷3晚标准客房Standard Room住宿，全程4间，含早<br> ◆ 车辆：行程期间旅游专车+专职司机（当地9座VAN或面包车，小费补助已含） <br>◆ 导游：行程期间当地专职中文导游服务（接送机无导游，小费补助已含）<br> ◆ 门票：行程中推荐的景点首道门票及活动费用 <br>◆ 保险：赠送旅游意外保险*8人（基础保险）
+    			</div>
+    		</div>
+    		<div class="content-item">
+    			<h5 class="content-item-title">费用不包含</h5>
+    			<div class="content-item-text">
+    				◆ 护照费用；<br>◆ 游览中另行付费的项目；<br>◆ 客人在酒店内洗衣、理发、电话、传真、饮料、烟酒、付费电视、行李搬运等个人消费；<br>◆ 客人支付给酒店内给服务生的各项小费；<br>◆ 行程单中敬请自理的用餐（客人可自选饭店单点用餐，费用当场现付）；<br>◆ 费用包含中未提及的收费景点门票；<br>◆ 个别景点要求雇佣的官方导游费用；<br>◆ 客人的境外购物消费；<br>◆ 客人因违约、自身过错、自由活动期间内行为或自身疾病引起得人身和财产损失；<br>◆ 费用包含中未提及的一切费用。
+    			</div>
+    		</div>
+    	</div>
+    	<!--温馨提示-->
+    	<div class="route-content">
+    		<div class="route-content-title clearfix">
+    			<h2>温馨提示</h2>
+    		</div>
+    		<div class="content-item">
+    			<div class="content-item-text">
+    				◆ 此报价以______人成团为基础报价，若人数变更，我司保留调整报价的权利；<br>◆ 此价格为无大型活动、大型会议、非周末的平日报价，如订团日期正遇会展、周末，我司有权调整价格；<br>◆ 因各目的地国对酒店星级的标准存在差异，且有些国家的酒店没有挂牌的标识，故所有酒店之星级标准只能参照常规标准执行；<br>◆ 境外午餐和晚餐，均为客人境外单点用餐，费用为境外现付。<br>◆ 鉴于机票随定随售的特殊性，最终定位与报价参考的机票舱位差价将由客人承担；<br>◆ 本行程依正常情况设计，如因天气、交通堵塞或其他突发状况等原因导致行程调整，请您予以理解。
+    			</div>
+    		</div>
+    	</div>
+    	<!--服务流程-->
+    	<div class="route-service-flow">
+    		<img src="statics/img/trip/service-step.png"/>
+    	</div>
+    	<!--底部固定浮动按钮-->
+    	<div class="trip-route-footer">
+			<div class="foot-item1">
+				<i class="route-icons tel"></i>
+				<span class="txt">通话</span>
+			</div>
+			<div class="foot-item1">
+				<i class="route-icons consult"></i>
+				<span class="txt">咨询</span>
+			</div>
+			<div class="foot-item2">
+				<a href="javascript:void(0);" class="route-btn-default"><i class="route-icons consult2"></i>免费咨询该行程</a>
+			</div>
+		</div>
+		<!--侧边固定浮动按钮-->
+		<div class="trip-route-sidebar">
+			<span class="icon-sidebar icon-review"></span>
+			<span class="icon-sidebar icon-gotop"></span>
+		</div>
+		<!--顶部固定悬浮导航-->
+		<div class="trip-route-topbar" style="display: none;">
+			<ul class="topbar-list">
+				<li class="topbar-item active"><span>特色景点</span></li>
+				<li class="topbar-item"><span>行程详情</span></li>
+				<li class="topbar-item"><span>费用说明</span></li>
+			</ul>
+		</div>
     </section>
-    <!--提交成功提示-->
-    <div class="layer-wrap" style="display:none;">
-        <div class="layer-bg"></div>
-        <div class="layer-box">
-            <div class="layer-inner">
-            	<span class="layer-close"></span>
-                <div class="layer-img-top">
-                    <div class="picture-toppic2">
-                        <span class="icon-success"></span>
-                        <span class="text">提交成功！</span>
-                    </div>
-                </div>
-                <!--低于等于3分的提示语-->
-                <div class="layer-content" style="display: block;">
-                    <p class="layer-txt-h">很抱歉给您带来了不好的体验，我们会尽快给您回复。</p>
-                    <p class="layer-txt-c">祝您生活愉快！</p>
-                </div>
-                <!--高于3分的提示语-->
-                <div class="layer-content" style="display: none;">
-                    <p class="layer-txt-h">感谢您对6人游的支持与信任！</p>
-                    <p class="layer-txt-c">继续分享旅行送好礼</p>
-                </div>
-                <div class="layer-footer-actions">
-                    <div class="layer-btn-lg">
-                        <a href="" class="layer-btn-txt">好的</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--行程概览-侧边收缩导航 --> 
+<div class="route-overview-pop" style="display: none;">
+	<div class="overview-side">
+		<div class="overview-box">
+			<div class="swiper-container overview-scroll">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul class="overview-list">
+							<li class="overview-item">
+								<span class="overview-day">Day1</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day2</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day3</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day4</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item active">
+								<span class="overview-day">Day5</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里 - 托莱多 - 马德里 - 托莱多</p>
+							</li>
+							<li class="overview-item ">
+								<span class="overview-day">Day6</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day7</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day8</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day9</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day10</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day11</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day12</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day13</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+							<li class="overview-item">
+								<span class="overview-day">Day14</span>
+								<p class="overview-city">马德里 - 托莱多 - 马德里</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+			<div class="overview-close">
+				<span class="icon-close"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 行程图片预览 -->
+<div class="image-preview-wrap preview-zoom-in" style="display: none;">
+	<div class="image-preview-top">
+		<span class="image-preview-indicator">1/3</span>
+	</div>
+	<div class="image-preview-group">
+		<div class="image-slide-item">
+			<div class="image-zoom-scroller">
+				<img class="image-zoom" src="statics/img/tmp/tmp.jpg"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="statics/js/swiper.min4.4.2.js" ></script>
+<script>
+    var specialSwiper = new Swiper('.route-special-container', {
+        slidesPerView: 'auto',
+        slidesOffsetBefore : 30,
+        pagination: {
+		    el: '.swiper-pagination',
+		    type: 'fraction',
+		},
+        spaceBetween: 30,
+        watchSlidesProgress: !0,
+		on: {
+			progress: function(b) {
+				for(i = 0; i < this.slides.length; i++) slide = this.slides.eq(i), slideProgress = this.slides[i].progress, prevIndent = 4 == i ? .3228 : .0898, scale = 1 > Math.abs(slideProgress + prevIndent) ? .1 * (1 - Math.abs(slideProgress + prevIndent)) + 1 : 1, slide.find(".goods").transform("scale3d(" +
+					scale + "," + scale + ",1)")
+			},
+			setTransition: function(b) {
+				for(var a = 0; a < this.slides.length; a++) this.slides.eq(a).find(".goods").transition(b)
+			},
+			touchEnd: function() {
+				-1515 > this.translate && alert("\u8df3\u8f6c")
+			}
+		}
+    });
+    var hotelSwiper = new Swiper('.hotel-group-container', {
+        slidesPerView: 'auto',
+        pagination: {
+		    el: '.swiper-pagination',
+		    type: 'fraction',
+		},
+        spaceBetween: 15,    
+    });
+    var trafficSwiper = new Swiper('.traffic-group-container', {
+        slidesPerView: 'auto',
+        pagination: {
+		    el: '.swiper-pagination',
+		    type: 'fraction',
+		},
+        spaceBetween: 15,    
+    });
+    
+    var overviewSwiper = new Swiper('.overview-scroll', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar:'.swiper-scrollbar',
+      mousewheel: true,
+    });
+  
+</script>
 </body>
-</html> 
+</html>
